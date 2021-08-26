@@ -6,8 +6,11 @@
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
   --pink: #FD4370;
   --background-color: #141628;
+  --fontHuge: 3rem;
   --fontSuperBig: 2rem;
   --fontBig: 1.2rem;
   --fontMed: 1rem;
@@ -18,8 +21,10 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* NavBar */
 nav {
   background-color: var(--background-color) !important;
+  z-index: 2;
 }
 
 nav a.navbar-brand {
@@ -29,8 +34,12 @@ nav a.navbar-brand {
 nav a.navbar-brand.logo {
   width: 16.25rem;
   font-family: 'Dancing Script', cursive;
-  color: var(--pink);
+  color: var(--primary-white);
   font-size: var(--fontSuperBig);
+}
+
+nav a.navbar-brand:hover {
+  color: var(--pink) !important;
 }
 
 
@@ -59,4 +68,68 @@ nav ul li {
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--pink);
   color: var(--pink) !important;
+}
+
+/* Header */
+.header-wrapper {
+  position: relative;
+  /* background: url(software-development.jpg) no-repeat; */
+  background: var(--background-color);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+  text-transform: uppercase;
+  font-size: var(--fontHuge);
+}
+
+/* Typed Text */
+.typed-text {
+  font-size: var(--fontSuperBig);
+  color: var(--primary-white);
+}
+
+
+/* Header Main Offer Button */
+.btn-main-offer {
+  border: 1px solid var(--pink);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin-top: 2rem;
+  z-index: 2;
+  text-decoration: none;
+  border-radius: 0.125rem;
+}
+
+.btn-main-offer:hover {
+  background-color: var(--pink);
+  color: var(--primary-white);
+  transition: 0.2 ease-in-out;
+}
+
+/* Particles JS */
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  z-index: 1;
 }
