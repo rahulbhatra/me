@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rahulbhatra.github.io/rahulbhatra.github.io",
+  "homepage": "https://rahulbhatra.github.io/Portfolio",
   "dependencies": {
     "@fontsource/dancing-script": "^4.5.0",
     "@fontsource/kaushan-script": "^4.5.0",
