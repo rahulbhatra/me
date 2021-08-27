@@ -1,5 +1,7 @@
 import './App.css';
+import 'react-circular-progressbar/dist/styles.css';
 import React  from 'react';
+
 
 // Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,6 +12,7 @@ import Header from './components/Header';
 
 // Particles
 import Particles from 'react-particles-js';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -37,6 +40,7 @@ function App() {
       />
       <Navbar />
       <Header />
+      <Skills />
     </div>
   );
 }
