@@ -16,19 +16,19 @@ const Navbar = () => {
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto justify-content-end container-fluid">
-                        <li className="nav-item active">
-                            <a className="nav-link" href="/#skills">SKILLS</a>
+                        <li className="nav-item active" key={'skills'}>
+                            <a className="nav-link" href="/me/#skills">SKILLS</a>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item" key={'projects'}>
                             <a className="nav-link" href="/me">PROJECTS</a>
                         </li>
-                        <li className="nav-item active">
+                        <li className="nav-item active" key={'experience'}>
                             <a className="nav-link" href="/me">EXPERIENCE </a>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item" key={'about_me'}>
                             <a className="nav-link" href="/me">ABOUT ME</a>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item" key={'contact'}>
                             <a className="nav-link" href="/me">CONTACT</a>
                         </li>
                     </ul>
