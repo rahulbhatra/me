@@ -61,15 +61,15 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-dark);
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
-  border-top: 0.1875rem solid var(--pink);
+.navbar-nav > li > a:active, .navbar-nav > li > a:focus, .navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--pink) !important;
   color: var(--pink) !important;
 }
 
-.navbar-nav > li > a:hover {
+/* .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--pink);
   color: var(--pink) !important;
-}
+} */
 
 /* Header */
 .header-wrapper {

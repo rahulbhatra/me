@@ -10,12 +10,30 @@ const timeLineElements = [
         date: 'December 2018 - November 2020',
         icon: 'Metacube',
         descriptions: [
-            'Built Student Enrollment System for Client University.',
-            'Integrated Jasper Server to Web Application Server for automatic report generation.',
-            'Designed and Built Student Document Mangement Tracker.',
-            'Created Admission Registration System.',
-            'Migrated Old PHP based Client System to Java based Web Application Server.',
-            'Migrated from google authentication to OAuth for Cost cutting.'
+            {
+                id: 1,
+                work: 'Built Student Enrollment System for Client University.'
+            },
+            {
+                id: 2,
+                work: 'Integrated Jasper Server to Web Application Server for automatic report generation.'
+            },
+            {
+                id: 3,
+                work: 'Designed and Built Student Document Mangement Tracker.'
+            },
+            {
+                id: 4,
+                work: 'Created Admission Registration System.'
+            },
+            {
+                id: 5,
+                work: 'Migrated Old PHP based Client System to Java based Web Application Server.'
+            },
+            {
+                id: 6,
+                work: 'Migrated from google authentication to OAuth for Cost cutting.'
+            }
         ]
     },
     {
@@ -26,9 +44,14 @@ const timeLineElements = [
         icon: 'Metacube',
         date: 'July 2018 - December 2018',
         descriptions: [
-            'Trained in different areas of software development.',
-            'Build an Employee Review System.'
-
+            {
+                id: 1,
+                work: 'Trained in different areas of software development.'
+            },
+            {
+                id: 2,
+                work: 'Build an Employee Review System.'
+            }
         ]
     },
     {
@@ -39,7 +62,10 @@ const timeLineElements = [
         icon: 'BSNL',
         date: 'June 2017 - July 2017',
         descriptions: [
-            'Learned about Telecommunication Networks, Fiber-Optics, Communication Technologies, Mobile Communication, Broadband Technologies, and Intelligent Networks.'
+            {
+                id: 1,
+                work: 'Learned about Telecommunication Networks, Fiber-Optics, Communication Technologies, Mobile Communication, Broadband Technologies, and Intelligent Networks.'
+            }
         ]
     },
     {
@@ -50,7 +76,10 @@ const timeLineElements = [
         icon: 'NIIT',
         date: 'July 2016 - July 2016',
         descriptions: [
-            'Learned about Telecommunication Networks, Fiber-Optics, Communication Technologies, Mobile Communication, Broadband Technologies, and Intelligent Networks.'
+            {
+                id: 1,
+                work: 'Learned about Telecommunication Networks, Fiber-Optics, Communication Technologies, Mobile Communication, Broadband Technologies, and Intelligent Networks.'
+            }
         ]
     },
 
@@ -59,7 +88,7 @@ const timeLineElements = [
 const Experience = () => {
 
   return (
-    <section className="page-section">
+    <section className="page-section" id="experience">
 
         <div className="container">
             <div className="text-center">
@@ -91,7 +120,7 @@ const Experience = () => {
                                 <ul align="justify">
                                     {timeLineElement.descriptions.map(description => {
                                         return (
-                                            <li>{description}</li>
+                                            <li key={description.id}>{description.work}</li>
                                         )
                                     })}
                                 </ul>
