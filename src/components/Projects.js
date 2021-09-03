@@ -43,7 +43,7 @@ const Projects = () => {
                         <div className="carousel-item active">
                             <div className="row carousel-img">
                                 <div className="col-md-6 col-12">
-                                    <img src={SeparatingPoints} className="d-block project-img" alt="Separating Points"/>
+                                    <img src={SeparatingPoints} className="d-block project-img border-2 border-dark rounded" alt="Separating Points"/>
                                 </div>
                                 <div className="col-md-6 col-12 carousel-info">
                                     <h5 className="carousel-info-header">Separating Points Using Axis Parallel Lines</h5>
@@ -55,7 +55,7 @@ const Projects = () => {
                         <div className="carousel-item">
                             <div className="row carousel-img">
                                 <div className="col-md-6 col-12">
-                                    <img src={CrimeAnalysis} className="d-block project-img" alt="Separating Points"/>
+                                    <img src={CrimeAnalysis} className="d-block project-img border-2 border-dark rounded" alt="Separating Points"/>
                                 </div>
                                 <div className="col-md-6 col-12 carousel-info">
                                     <h5 className="carousel-info-header">Crime Analysis And Prediction</h5>
@@ -70,7 +70,7 @@ const Projects = () => {
                         <div className="carousel-item">
                             <div className="row carousel-img">
                                 <div className="col-md-6 col-12">
-                                    <img src={Portfolio} className="d-block project-img" alt="Separating Points"/>
+                                    <img src={Portfolio} className="d-block project-img border-2 border-dark rounded" alt="Separating Points"/>
                                 </div>
                                 <div className="col-md-6 col-12 carousel-info">
                                     <h5 className="carousel-info-header">Portfolio</h5>
@@ -83,7 +83,7 @@ const Projects = () => {
 
                             
                         {/* <div className="carousel-item active" data-bs-interval="10000">
-                            <img src={SeparatingPoints} className="d-block project-img" alt="Separating Points"/>
+                            <img src={SeparatingPoints} className="d-block project-img border-2 border-dark rounded" alt="Separating Points"/>
                             <h5>Separating Points Using Axis Parallel Lines</h5>
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>Separating Points Using Axis Parallel Lines</h5>
@@ -91,7 +91,7 @@ const Projects = () => {
                             </div>
                         </div> */}
                         {/* <div className="carousel-item" data-bs-interval="2000">
-                            <img src={CrimeAnalysis} className="d-block project-img" alt="..."/>
+                            <img src={CrimeAnalysis} className="d-block project-img border-2 border-dark rounded" alt="..."/>
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>Crime Analysis And Prediction</h5>
                                 <p>
@@ -101,7 +101,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img src={Portfolio} className="d-block project-img" alt="..."/>
+                            <img src={Portfolio} className="d-block project-img border-2 border-dark rounded" alt="..."/>
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>Portfolio</h5>
                                 <p>Some representative placeholder content for the third slide.</p>

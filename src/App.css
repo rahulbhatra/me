@@ -7,7 +7,7 @@
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255, 255, 255, 0);
   --primary-red: #ef4035;
-  --primary-hover-red: #f33501;
+  --primary-hover-red: hsl(13, 99%, 48%);
   --pink: #FD4370;
   --background-color: #141628;
   --fontHuge: 3rem;
@@ -292,6 +292,16 @@ nav ul li {
   border: 7px solid var(--pink);
   /* background-color: var(--pink) !important; */
   /* background-color: #8a8eb8 !important; */
+}
+
+.timeline-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-white);
+  font-size: var(--fontBig);
 }
 
 /* .timeline-img {

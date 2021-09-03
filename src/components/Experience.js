@@ -1,9 +1,5 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import Metacube from '../metacube.png';
-import IIT from '../iit.png';
-import BSNL from '../bsnl.png';
-import NIIT from '../niit.png'
 
 const timeLineElements = [
     {
@@ -12,7 +8,7 @@ const timeLineElements = [
         company: 'Metacube Software Pvt Ltd',
         location: 'Jaipur, Rajasthan/India',
         date: 'December 2018 - November 2020',
-        icon: Metacube,
+        icon: 'Metacube',
         descriptions: [
             'Built Student Enrollment System for Client University.',
             'Integrated Jasper Server to Web Application Server for automatic report generation.',
@@ -27,7 +23,7 @@ const timeLineElements = [
         title: 'Graduate Engineer Trainee',
         company: 'Metacube Software Pvt Ltd',
         location: 'Jaipur, Rajasthan/India',
-        icon: Metacube,
+        icon: 'Metacube',
         date: 'July 2018 - December 2018',
         descriptions: [
             'Trained in different areas of software development.',
@@ -40,7 +36,7 @@ const timeLineElements = [
         title: 'Trainee',
         company: 'BSNL Telecom Factory',
         location: 'Jaipur, Rajasthan (India)',
-        icon: BSNL,
+        icon: 'BSNL',
         date: 'June 2017 - July 2017',
         descriptions: [
             'Learned about Telecommunication Networks, Fiber-Optics, Communication Technologies, Mobile Communication, Broadband Technologies, and Intelligent Networks.'
@@ -49,9 +45,9 @@ const timeLineElements = [
     {
         id: 4,
         title: 'Trainee',
-        company: 'NIIT',
+        company: 'The National Institute of Information Technology (NIIT)',
         location: 'Jaipur, Rajasthan (India)',
-        icon: NIIT,
+        icon: 'NIIT',
         date: 'July 2016 - July 2016',
         descriptions: [
             'Learned about Telecommunication Networks, Fiber-Optics, Communication Technologies, Mobile Communication, Broadband Technologies, and Intelligent Networks.'
@@ -80,10 +76,11 @@ const Experience = () => {
                             key={timeLineElement.id}
                             // date={timeLineElement.date}
                             // dateClassName="timeline-date"
-                            iconStyle={{ backgroundColor: '#fff'}}
+                            iconStyle={{ backgroundColor: '#141628'}}
                             icon=
                             {
-                                <img src={timeLineElement.icon} className="rounded-circle img-fluid timeline-img center" alt={timeLineElement.id} />
+                                // <img src={timeLineElement.icon} className="rounded-circle img-fluid timeline-img center" alt={timeLineElement.id} />
+                                <div className="timeline-icon text-uppercase">{timeLineElement.icon}</div>
                             }
                         >
                             <h5 className="vertical-timeline-element-title">{timeLineElement.date}</h5>
