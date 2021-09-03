@@ -39,55 +39,42 @@ const skill_names = [
 
 const Skills = () => {
     return (
-        <section class="page-section" id="skills">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Skills</h2>
-                    <h3 class="section-subheading text-muted">
+        <section className="page-section" id="skills">
+            <div className="container">
+                <div className="text-center">
+                    <h2 className="section-heading text-uppercase">Skills</h2>
+                    <h3 className="section-subheading text-muted">
                         Skills are to build over time and repolishing them again and again is demand of time.
                     </h3>
                 </div>
                 
                 <div className="professional-skills row">
-                    {skill_names.map(skill => (
-                        <div className="col-lg-2 col-md-3 col-sm-4 col-4">
-                            <div className="progress-skill">
-                                <ReactVisibilitySensor>
-                                    {({ isVisible }) => {
-                                        const percentage = isVisible ? skill.progress : 0;
-                                        return (
-                                            <CircularProgressbarWithChildren value={percentage}
-                                                background={true}
-                                                style={buildStyles({width: 100, height: 100, pathTransitionDuration: 2})}
-                                            >
-                                                <i className={skill.icon} style={{position:'relative',
-                                                    top: 'calc(45% - 10px)', fontSize: '40px',
-                                                    color: 'white'}}></i>
-                                            </CircularProgressbarWithChildren>
-                                        );
-                                    }}  
-                                    {/* <ProgressProvider valueStart={0} valueEnd={skill.progress}>
-                                        {(value) => 
-                                            <CircularProgressbarWithChildren value={value}
-                                                background={true}
-                                                style={buildStyles({width: 100, height: 100, pathTransitionDuration: 2})}
-                                            >
-                                                <i class={skill.icon} style={{position:'relative',
-                                                    top: 'calc(45% - 10px)', fontSize: '40px',
-                                                    color: 'white'}}></i>
-                                            </CircularProgressbarWithChildren>
-                                        // <CircularProgressbar value={value} text={skill.name} background={true}
-                                        //     style={{width: 100, height: 100}}
-                                        // />
-                                        }
-                                    </ProgressProvider> */}
-                                </ReactVisibilitySensor>
-                                
-                                
-                                <h6 class="skill-name">{skill.name}</h6>
+                    {skill_names.map(skill => {
+                        return (
+                            <div className="col-lg-2 col-md-3 col-sm-4 col-4">
+                                <div className="progress-skill">
+                                    <ReactVisibilitySensor>
+                                        {({ isVisible }) => {
+                                            const percentage = isVisible ? skill.progress : 0;
+                                            return (
+                                                <CircularProgressbarWithChildren value={percentage}
+                                                    background={true}
+                                                    style={buildStyles({width: 100, height: 100, pathTransitionDuration: 2})}
+                                                >
+                                                    <i className={skill.icon} style={{position:'relative',
+                                                        top: 'calc(45% - 10px)', fontSize: '40px',
+                                                        color: 'white'}}></i>
+                                                </CircularProgressbarWithChildren>
+                                            );
+                                        }}  
+                                    </ReactVisibilitySensor>
+                                    
+                                    
+                                    <h6 className="skill-name">{skill.name}</h6>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        )
+                    })}
                 </div>        
             </div>
         </section>
