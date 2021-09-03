@@ -15,6 +15,7 @@
   --fontBig: 1.2rem;
   --fontMed: 1rem;
   --fontSmall: 0.9rem;
+  --fontSuperSmall: 0.6rem;
 }
 
 body {
@@ -347,6 +348,10 @@ nav ul li {
   .vertical-timeline-element-content-arrow {
     top: 40px !important;
   }
+
+  .timeline-icon {
+    font-size: var(--fontSmall);
+  }
 }
 
 @media screen and (min-width: 1170px) {
@@ -372,4 +377,7 @@ nav ul li {
     top: 30px !important;
   }
   
+  .timeline-icon {
+    font-size: var(--fontSuperSmall);
+  }
 }
