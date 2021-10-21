@@ -1,6 +1,6 @@
 import React from 'react';
 import ProfilePhoto from '../ProfilePhoto.jpeg';
-// import GithubIcon from 'react-icons/AiFillGitlab';
+
 
 const About = () => {
     return (
@@ -14,9 +14,9 @@ const About = () => {
                     <img src={ProfilePhoto} className="rounded-circle" style={{width: '200px'}} />
                     <h2 className="text-white">Rahul Sharma</h2>
                     <div className="flex"></div>
-                    <p className="text-white">I am student at Illinois Institute of Technology since Spring 2021. I have two and half years
+                    <p className="text-white">I am a graduate student at Illinois Institute of Technology since Spring 2021. I have two and half years
                         of experience as software engineer. Currently searching for the opportunities as software engineer intern
-                        and coop(40 Hours) from Jan 2022.
+                        and coop from Jan 2022.
                     </p>
                 </div>
             </div>

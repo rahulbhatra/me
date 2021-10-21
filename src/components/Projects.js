@@ -5,6 +5,11 @@ import Portfolio from '../portfolio.jpg';
 
 const projects = [
     {
+        img: SmartPortables, 
+        name: 'Separating points by parallel axis Lines',
+        description: 'SEPARATING POINTS BY AXIS-PARALLEL LINES has applications to fault-tolerant multimodal sensor fusion in the context of embedded sensor networks.'
+    },
+    {
         img: SeparatingPoints, 
         name: 'Separating points by parallel axis Lines',
         description: 'SEPARATING POINTS BY AXIS-PARALLEL LINES has applications to fault-tolerant multimodal sensor fusion in the context of embedded sensor networks.'
