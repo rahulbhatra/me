@@ -36,8 +36,8 @@ function App() {
             shape: {
               type: "circle",
               stroke: {
-                width: 5,
-                color: "#FD4370"
+                width: 10,
+                color: "#fff"
               }
             }
 
