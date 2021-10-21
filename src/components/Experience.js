@@ -4,6 +4,24 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 const timeLineElements = [
     {
         id: 1,
+        title: 'Graduate Teaching Assistant',
+        company: 'Illinois Institute of Technology',
+        location: 'Chicago, Illinois/USA',
+        date: 'September 2020 - Present',
+        icon: 'Illnois Tech',
+        descriptions: [
+            {
+                id: 1,
+                work: 'Graded assignments, proctored exams and managed slides for Introduction to Algorithms 430 coursework.'
+            },
+            {
+                id: 2,
+                work: 'Taught algorithms and cleared doubts in recitation classroom to 40 + students.'
+            }
+        ]
+    },
+    {
+        id: 2,
         title: 'Software Engineer',
         company: 'Metacube Software Pvt Ltd',
         location: 'Jaipur, Rajasthan/India',
@@ -12,45 +30,43 @@ const timeLineElements = [
         descriptions: [
             {
                 id: 1,
-                work: 'Built Student Enrollment System for Client University.'
+                work: 'Experienced Technologies: Java, JavaScript, TypeScript, Spring, AngularJS, Hibernate, SQL, Bootstrap.'
             },
             {
                 id: 2,
-                work: 'Integrated Jasper Server to Web Application Server for automatic report generation.'
+                work: 'Developed a university applicant enrollment system to facilitate 40,000 + users every year.'
             },
             {
                 id: 3,
-                work: 'Designed and Built Student Document Mangement Tracker.'
+                work: 'Integrated Jasper Server and Java Web Application to generate reports using TIBCO Jaspersoft tool minimized report' +
+                'creation time from 16 hours to 2 hours.'
             },
             {
                 id: 4,
-                work: 'Created Admission Registration System.'
+                work: 'Reduced hard paper work requirement of client universities to 60% by creating online documents management system.'
             },
             {
                 id: 5,
-                work: 'Migrated Old PHP based Client System to Java based Web Application Server.'
+                work: 'Built a system allows admin to create registration forms for university programs to enroll 10,000 plus eligible students in'  +
+                'courses for upcoming semesters.'
             },
             {
                 id: 6,
-                work: 'Migrated from google authentication to OAuth for Cost cutting.'
-            }
-        ]
-    },
-    {
-        id: 2,
-        title: 'Graduate Engineer Trainee',
-        company: 'Metacube Software Pvt Ltd',
-        location: 'Jaipur, Rajasthan/India',
-        icon: 'Metacube',
-        date: 'July 2018 - December 2018',
-        descriptions: [
-            {
-                id: 1,
-                work: 'Trained in different areas of software development.'
+                work: 'Migrated data from clients old PHP application to new centralized application university using Async tasks.'
             },
             {
-                id: 2,
-                work: 'Build an Employee Review System.'
+                id: 7,
+                work: 'Aided company in cost-cutting by removing dependency of system from google authentication services and shifted' +
+                'application authentication to spring security.'
+            },
+            {
+                id: 8,
+                work: 'Collaborated in 20 people team to develop web application eases performance review of employees based on set metrics in' +
+                'organization quarterly, half yearly or yearly.'
+            },
+            {
+                id: 9,
+                work: 'Designed backend data filters for pagination to work on all entities on basis of 30 + common attribute.'
             }
         ]
     },
@@ -103,8 +119,6 @@ const Experience = () => {
                     return (
                         <VerticalTimelineElement
                             key={timeLineElement.id}
-                            // date={timeLineElement.date}
-                            // dateClassName="timeline-date"
                             iconStyle={{ backgroundColor: '#141628'}}
                             icon=
                             {

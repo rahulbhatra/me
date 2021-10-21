@@ -381,3 +381,12 @@ nav ul li {
     font-size: var(--fontSuperSmall);
   }
 }
+
+/* About me */
+.text-white {
+  color: var(--primary-white);
+}
+
+.text-area {
+  height: 145px;
+}

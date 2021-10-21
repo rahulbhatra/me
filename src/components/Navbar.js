@@ -58,10 +58,10 @@ const Navbar = () => {
                             <a className="nav-link" href="/me/#experience">EXPERIENCE </a>
                         </li>
                         <li className="nav-item" key={'about_me'}>
-                            <a className="nav-link" href="/me">ABOUT ME</a>
+                            <a className="nav-link" href="/me/#about">ABOUT ME</a>
                         </li>
                         <li className="nav-item" key={'contact'}>
-                            <a className="nav-link" href="/me">CONTACT</a>
+                            <a className="nav-link" href="/me/#contact">CONTACT</a>
                         </li>
                     </ul>
                 </div>

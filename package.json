@@ -13,6 +13,8 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.1.0",
+    "emailjs-com": "^3.2.0",
+    "nodemailer": "^6.7.0",
     "react": "^17.0.2",
     "react-circular-progressbar": "^2.0.4",
     "react-devicon": "^0.1.9",
