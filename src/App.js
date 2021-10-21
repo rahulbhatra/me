@@ -47,7 +47,7 @@ function App() {
       <Navbar />
       <Header />
       <Skills />
-      <Particles
+      {/* <Particles
         params={{
           particles: {
             number: {
@@ -67,7 +67,7 @@ function App() {
 
           }
         }}
-      />
+      /> */}
       <Projects />
       <Experience />
       <About />

@@ -390,3 +390,7 @@ nav ul li {
 .text-area {
   height: 145px;
 }
+
+.project-icon {
+  text-decoration: none;
+}

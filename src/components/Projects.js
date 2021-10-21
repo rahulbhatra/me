@@ -2,30 +2,31 @@ import React from 'react';
 import SeparatingPoints from '../separating_points.jpg';
 import CrimeAnalysis from '../crime_analysis.jpg';
 import Portfolio from '../portfolio.jpg';
+import SmartPortables from '../SmartPortables.png'
 
-const projects = [
-    {
-        img: SmartPortables, 
-        name: 'Separating points by parallel axis Lines',
-        description: 'SEPARATING POINTS BY AXIS-PARALLEL LINES has applications to fault-tolerant multimodal sensor fusion in the context of embedded sensor networks.'
-    },
-    {
-        img: SeparatingPoints, 
-        name: 'Separating points by parallel axis Lines',
-        description: 'SEPARATING POINTS BY AXIS-PARALLEL LINES has applications to fault-tolerant multimodal sensor fusion in the context of embedded sensor networks.'
-    },
-    {
-        img: CrimeAnalysis,
-        name: 'Crime Analysis And Prediction',
-        description: 'Analyzed Crime in the Chicago City and Used different regression models to compare the accuracy of predictions.' +
-        'Used the combination of Time-series and expanding window techniques to get the predictions.'
-    },
-    {
-        img: Portfolio,
-        name: 'Portfolio',
-        description: 'Created portfolio using react, bootstrap, HTML5 and CSS3.'
-    }
-];
+// const projects = [
+//     {
+//         img: SmartPortables, 
+//         name: 'SmartPortables',
+//         description: 'Built an E-Commerce web application for purchasing electronic items online using Apache Tomcat, Servlet, Java, MongoDB, and MySQL.'
+//     },
+//     {
+//         img: SeparatingPoints, 
+//         name: 'Separating points by parallel axis Lines',
+//         description: 'SEPARATING POINTS BY AXIS-PARALLEL LINES has applications to fault-tolerant multimodal sensor fusion in the context of embedded sensor networks.'
+//     },
+//     {
+//         img: CrimeAnalysis,
+//         name: 'Crime Analysis And Prediction',
+//         description: 'Analyzed Crime in the Chicago City and Used different regression models to compare the accuracy of predictions.' +
+//         'Used the combination of Time-series and expanding window techniques to get the predictions.'
+//     },
+//     {
+//         img: Portfolio,
+//         name: 'Portfolio',
+//         description: 'Created portfolio using react, bootstrap, HTML5 and CSS3.'
+//     }
+// ];
 
 const Projects = () => {
     return (
@@ -43,9 +44,30 @@ const Projects = () => {
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
                     </div>
                     <div className="carousel-inner">
+
                         <div className="carousel-item active">
+                            <div className="row carousel-img">
+                                <div className="col-md-6 col-12">
+                                    <img src={SmartPortables} className="d-block project-img border-2 border-dark rounded" alt="SmartPortables"/>
+                                </div>
+                                <div className="col-md-6 col-12 carousel-info">
+                                    <h5 className="carousel-info-header">SmartPortables</h5>
+                                    <p className="text-muted">Built an E-Commerce web application for purchasing electronic items online using Apache Tomcat, Servlet, Java,
+                                                                MongoDB, and MySQL.
+                                    </p>
+                                    <a className="project-icon" href={'https://github.com/rahulbhatra/SmartPortables'}>
+                                    <i className={'devicon-github-original colored'} style={{position:'relative',
+                                                        fontSize: '100px',
+                                                        color: 'white'}}></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="carousel-item">
                             <div className="row carousel-img">
                                 <div className="col-md-6 col-12">
                                     <img src={SeparatingPoints} className="d-block project-img border-2 border-dark rounded" alt="Separating Points"/>
@@ -53,6 +75,11 @@ const Projects = () => {
                                 <div className="col-md-6 col-12 carousel-info">
                                     <h5 className="carousel-info-header">Separating Points Using Axis Parallel Lines</h5>
                                     <p className="text-muted">SEPARATING POINTS BY AXIS-PARALLEL LINES has applications to fault-tolerant multimodal sensor fusion in the context of embedded sensor networks.</p>
+                                    <a className="project-icon" href={'https://github.com/rahulbhatra/SEPARATING-POINTS-BY-AXIS-PARALLEL-LINES'}>
+                                    <i className={'devicon-github-original colored'} style={{position:'relative',
+                                                        fontSize: '100px',
+                                                        color: 'white'}}></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -68,6 +95,11 @@ const Projects = () => {
                                         Analyzed Crime in the Chicago City and Used different regression models to compare the accuracy of predictions.
                                         Used the combination of Time-series and expanding window techniques to get the predictions.
                                     </p>
+                                    <a className="project-icon" href={'https://github.com/rahulbhatra/crime_rate_analysis_and_prediction'}>
+                                    <i className={'devicon-github-original colored'} style={{position:'relative',
+                                                        fontSize: '100px',
+                                                        color: 'white'}}></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -82,36 +114,14 @@ const Projects = () => {
                                     <p className="text-muted">
                                         Implemented Portfolio Application Using React, JavaScript, Bootstrap, HTML5 and CSS3.
                                     </p>
+                                    <a className="project-icon" href={'https://github.com/rahulbhatra/me'}>
+                                    <i className={'devicon-github-original colored'} style={{position:'relative',
+                                                        fontSize: '100px',
+                                                        color: 'white'}}></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-
-                            
-                        {/* <div className="carousel-item active" data-bs-interval="10000">
-                            <img src={SeparatingPoints} className="d-block project-img border-2 border-dark rounded" alt="Separating Points"/>
-                            <h5>Separating Points Using Axis Parallel Lines</h5>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>Separating Points Using Axis Parallel Lines</h5>
-                                <p>SEPARATING POINTS BY AXIS-PARALLEL LINES has applications to fault-tolerant multimodal sensor fusion in the context of embedded sensor networks.</p>
-                            </div>
-                        </div> */}
-                        {/* <div className="carousel-item" data-bs-interval="2000">
-                            <img src={CrimeAnalysis} className="d-block project-img border-2 border-dark rounded" alt="..."/>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>Crime Analysis And Prediction</h5>
-                                <p>
-                                    Analyzed Crime in the Chicago City and Used different regression models to compare the accuracy of predictions.
-                                    Used the combination of Time-series and expanding window techniques to get the predictions.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <img src={Portfolio} className="d-block project-img border-2 border-dark rounded" alt="..."/>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>Portfolio</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </div> */}
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
