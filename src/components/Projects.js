@@ -3,6 +3,7 @@ import SeparatingPoints from '../separating_points.jpg';
 import CrimeAnalysis from '../crime_analysis.jpg';
 import Portfolio from '../portfolio.jpg';
 import SmartPortables from '../SmartPortables.png'
+import HomeWeather from '../HomeWeather.png';
 
 // const projects = [
 //     {
@@ -44,7 +45,8 @@ const Projects = () => {
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     </div>
                     <div className="carousel-inner">
 
@@ -66,6 +68,26 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
+
+                        <div className="carousel-item">
+                            <div className="row carousel-img">
+                                <div className="col-md-6 col-12">
+                                    <img src={HomeWeather} className="d-block project-img border-2 border-dark rounded" alt="Separating Points"/>
+                                </div>
+                                <div className="col-md-6 col-12 carousel-info">
+                                    <h5 className="carousel-info-header">Home Weather</h5>
+                                    <p className="text-muted">
+                                        Constructed Android Weather Application to see current weather with next 48 hours hourly and next 7 day weather predictions.
+                                    </p>
+                                    <a className="project-icon" href={'https://github.com/rahulbhatra/HomeWeather'}>
+                                    <i className={'devicon-github-original colored'} style={{position:'relative',
+                                                        fontSize: '100px',
+                                                        color: 'white'}}></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
 
                         <div className="carousel-item">
                             <div className="row carousel-img">
