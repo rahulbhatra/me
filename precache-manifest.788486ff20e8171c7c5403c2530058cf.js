@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "0d3eeea63fb786732279",
+    "revision": "c099bc7f4e7c58143e61",
     "url": "/me/static/css/main.82c929d3.chunk.css"
   },
   {
-    "revision": "0d3eeea63fb786732279",
-    "url": "/me/static/js/main.8f29acdb.chunk.js"
+    "revision": "c099bc7f4e7c58143e61",
+    "url": "/me/static/js/main.625bc403.chunk.js"
   },
   {
-    "revision": "257d0f50afcf764b3887",
-    "url": "/me/static/js/runtime~main.8e97bd93.js"
+    "revision": "8ac5d02ddee4a0ccf990",
+    "url": "/me/static/js/runtime~main.8050ad1b.js"
   },
   {
-    "revision": "9aa6aacec399289b1583",
+    "revision": "c111c3b936b07f9793b8",
     "url": "/me/static/css/2.c3f2a996.chunk.css"
   },
   {
-    "revision": "9aa6aacec399289b1583",
-    "url": "/me/static/js/2.3fb3fdaa.chunk.js"
+    "revision": "c111c3b936b07f9793b8",
+    "url": "/me/static/js/2.a80f6dc8.chunk.js"
   },
   {
-    "revision": "88067dce54528d1c91c3",
-    "url": "/me/static/js/3.6364f77d.chunk.js"
+    "revision": "da2dd1ed683cb05e5a33",
+    "url": "/me/static/js/3.ad9be7be.chunk.js"
   },
   {
     "revision": "78abfceb245130b04f2eb5745530cb9d",
@@ -40,11 +40,15 @@ self.__precacheManifest = [
     "url": "/me/static/media/SmartPortables.54e5cc5d.png"
   },
   {
+    "revision": "2e780a81a3c43683a3d6e0352aed8ec1",
+    "url": "/me/static/media/HomeWeather.2e780a81.png"
+  },
+  {
     "revision": "e099b004f85d95fd03a68ce171cf5821",
     "url": "/me/static/media/ProfilePhoto.e099b004.jpeg"
   },
   {
-    "revision": "12976089319be09688548a0a4b0deb84",
+    "revision": "48751cb073005c1b24e67c5957f4bc2d",
     "url": "/me/index.html"
   }
 ];
