@@ -1,5 +1,12 @@
 import React from 'react';
 import projectList from '../data/projects.json';
+import SeparatingPoints from '../separating_points.jpg';
+import CrimeAnalysis from '../crime_analysis.jpg';
+import Portfolio from '../portfolio.jpg';
+import SmartPortables from '../SmartPortables.png'
+import HomeWeather from '../HomeWeather.png';
+
+const images = [SmartPortables, HomeWeather, SeparatingPoints, CrimeAnalysis, Portfolio]
 
 const Projects = () => {
     return (
@@ -24,7 +31,7 @@ const Projects = () => {
                     </div>
                     <div className="carousel-inner">
                         {projectList.map((project, index) => {
-                            return <ProjectSlide key={project.header} project={project} active={index === 0} />
+                            return <ProjectSlide key={project.header} project={project} active={index === 0} index={index} />
                         })}
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -43,12 +50,12 @@ const Projects = () => {
 };
 
 
-const ProjectSlide = ({ project, active }) => {
+const ProjectSlide = ({ project, active, index }) => {
   return (
     <div className={`carousel-item ${active ? "active": ""}`}>
         <div className="row carousel-img">
             <div className="col-md-6 col-12">
-                <img src={project.img} alt={project.header} className="d-block project-img border-2 border-dark rounded"/>
+                <img src={images[index]} alt={project.header} className="d-block project-img border-2 border-dark rounded"/>
             </div>
             <div className="col-md-6 col-12 carousel-info">
                 <h5 className="carousel-info-header">{project.header}</h5>
