@@ -1,4 +1,4 @@
-import Typed from "react-typed";
+import Typed from "react-typed-component";
 import React from "react";
 
 const Header = () => {

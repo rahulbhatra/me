@@ -5,30 +5,6 @@ import Portfolio from '../portfolio.jpg';
 import SmartPortables from '../SmartPortables.png'
 import HomeWeather from '../HomeWeather.png';
 
-// const projects = [
-//     {
-//         img: SmartPortables, 
-//         name: 'SmartPortables',
-//         description: 'Built an E-Commerce web application for purchasing electronic items online using Apache Tomcat, Servlet, Java, MongoDB, and MySQL.'
-//     },
-//     {
-//         img: SeparatingPoints, 
-//         name: 'Separating points by parallel axis Lines',
-//         description: 'SEPARATING POINTS BY AXIS-PARALLEL LINES has applications to fault-tolerant multimodal sensor fusion in the context of embedded sensor networks.'
-//     },
-//     {
-//         img: CrimeAnalysis,
-//         name: 'Crime Analysis And Prediction',
-//         description: 'Analyzed Crime in the Chicago City and Used different regression models to compare the accuracy of predictions.' +
-//         'Used the combination of Time-series and expanding window techniques to get the predictions.'
-//     },
-//     {
-//         img: Portfolio,
-//         name: 'Portfolio',
-//         description: 'Created portfolio using react, bootstrap, HTML5 and CSS3.'
-//     }
-// ];
-
 const Projects = () => {
     return (
         <section className="second-page-section" id="projects">

@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Java",
+    "progress": 100,
+    "icon": "devicon-java-plain"
+  },
+  {
+    "id": 2,
+    "name": "JavaScript",
+    "progress": 100,
+    "icon": "devicon-javascript-plain"
+  },
+  {
+    "id": 3,
+    "name": "C",
+    "progress": 100,
+    "icon": "devicon-c-plain"
+  },
+  {
+    "id": 4,
+    "name": "C++",
+    "progress": 100,
+    "icon": "devicon-cplusplus-plain"
+  },
+  {
+    "id": 5,
+    "name": "Python",
+    "progress": 100,
+    "icon": "devicon-python-plain"
+  },
+  {
+    "id": 6,
+    "name": "HTML5",
+    "progress": 100,
+    "icon": "devicon-html5-plain"
+  },
+  {
+    "id": 7,
+    "name": "CSS3",
+    "progress": 100,
+    "icon": "devicon-css3-plain"
+  },
+  {
+    "id": 8,
+    "name": "Shell Scripting",
+    "progress": 100,
+    "icon": "devicon-c-plain"
+  },
+  {
+    "id": 9,
+    "name": "Git",
+    "progress": 100,
+    "icon": "devicon-git-plain"
+  },
+  {
+    "id": 10,
+    "name": "Jira",
+    "progress": 100,
+    "icon": "devicon-jira-plain"
+  },
+  {
+    "id": 11,
+    "name": "IntelliJ IDEA",
+    "progress": 100,
+    "icon": "devicon-intellij-plain"
+  },
+  {
+    "id": 12,
+    "name": "PyCharm",
+    "progress": 100,
+    "icon": "devicon-pycharm-plain"
+  },
+  {
+    "id": 13,
+    "name": "MySql",
+    "progress": 100,
+    "icon": "devicon-mysql-plain"
+  },
+  {
+    "id": 14,
+    "name": "Ubuntu",
+    "progress": 100,
+    "icon": "devicon-ubuntu-plain"
+  },
+  {
+    "id": 15,
+    "name": "Windows",
+    "progress": 100,
+    "icon": "devicon-windows8-plain"
+  },
+  {
+    "id": 16,
+    "name": "MacOs",
+    "progress": 100,
+    "icon": "devicon-apple-plain"
+  },
+  {
+    "id": 17,
+    "name": "Spring",
+    "progress": 100,
+    "icon": "devicon-spring-plain"
+  },
+  {
+    "id": 18,
+    "name": "Spring Boot",
+    "progress": 100,
+    "icon": "devicon-spring-plain"
+  },
+  {
+    "id": 19,
+    "name": "Spring MVC",
+    "progress": 100,
+    "icon": "devicon-spring-plain"
+  },
+  {
+    "id": 20,
+    "name": "Spring Security",
+    "progress": 100,
+    "icon": "devicon-spring-plain"
+  },
+  {
+    "id": 21,
+    "name": "Android",
+    "progress": 100,
+    "icon": "devicon-android-plain"
+  },
+  {
+    "id": 22,
+    "name": "Django",
+    "progress": 100,
+    "icon": "devicon-django-plain"
+  },
+  {
+    "id": 23,
+    "name": "Angular",
+    "progress": 100,
+    "icon": "devicon-angularjs-plain"
+  },
+  {
+    "id": 24,
+    "name": "Bootstrap",
+    "progress": 100,
+    "icon": "devicon-bootstrap-plain"
+  },
+  {
+    "id": 25,
+    "name": "React",
+    "progress": 100,
+    "icon": "devicon-react-plain"
+  }
+]

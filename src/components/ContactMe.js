@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 
 const ContactMe = () => {
     const form = useRef();
@@ -54,7 +54,7 @@ const ContactMe = () => {
                             </div>
                         </div>
                         <div className="mx-auto">
-                            <input class="btn btn-success" type="submit" value="Send Message" />
+                            <input className="btn btn-success" type="submit" value="Send Message" />
                         </div>
                         
                     </form>
