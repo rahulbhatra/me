@@ -214,6 +214,10 @@ nav ul li {
   background-color: var(--background-color);
 }
 
+.section-subheading {
+  color: var(--primary-white) !important;
+}
+
 .second-page-section h2.second-section-heading, h2.second-section-heading {
   font-size: 2.5rem;
   margin-top: 0;

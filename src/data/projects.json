@@ -1,0 +1,32 @@
+[
+    {
+        "img": "../SmartPortables.png",
+        "header": "Smart Portables",
+        "description": "Built an E-Commerce web application for purchasing electronic items online using Apache Tomcat, Servlet, Java, MongoDB, and MySQL.",
+        "github_link": "https://github.com/rahulbhatra/SmartPortables"
+    },
+    {
+        "img": "../HomeWeather.png",
+        "header": "Home Weather",
+        "description": "Constructed Android Weather Application to see current weather with next 48 hours hourly and next 7 day weather predictions.",
+        "github_link": "https://github.com/rahulbhatra/HomeWeather"
+    },
+    {
+        "img": "../separating_points.jpg",
+        "header": "Separating Points By Axis Parallel Lines",
+        "description": "SEPARATING POINTS BY AXIS-PARALLEL LINES has applications to fault-tolerant multi modal sensor fusion in the context of embedded sensor networks.",
+        "github_link": "https://github.com/rahulbhatra/SEPARATING-POINTS-BY-AXIS-PARALLEL-LINES"
+    },
+    {
+        "img": "../separating_points.jpg",
+        "header": "Crime Analysis And Prediction",
+        "description": "Analyzed Crime in the Chicago City and Used different regression models to compare the accuracy of predictions. Used the combination of Time-series and expanding window techniques to get the predictions.",
+        "github_link": "https://github.com/rahulbhatra/crime_rate_analysis_and_prediction"
+    },
+    {
+        "img": "../separating_points.jpg",
+        "header": "Portfolio",
+        "description": "Implemented Portfolio Application Using React, JavaScript, Bootstrap, HTML5 and CSS3.",
+        "github_link": "https://github.com/rahulbhatra/me"
+    }
+]
