@@ -24,17 +24,9 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 function App() {
 
   const [ init, setInit ] = useState(false);
-
-    // this should be run only once per application lifetime
     useEffect(() => {
       initParticlesEngine(async (engine) => {
-          // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-          // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-          // starting from v2 you can add only the features you need reducing the bundle size
-          //await loadAll(engine);
-          //await loadFull(engine);
           await loadSlim(engine);
-          //await loadBasic(engine);
       }).then(() => {
           setInit(true);
       });
@@ -75,13 +67,13 @@ function App() {
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: ["#FD4370", "#FFFFFF", "#00FFFF", "#FFD700"],
                     },
                     links: {
-                        color: "#ffffff",
-                        distance: 150,
+                        color: ["#FD4370", "#FFFFFF", "#00FFFF", "#FFD700"],
+                        distance: 200,
                         enable: true,
-                        opacity: 0.5,
+                        opacity: 0.3,
                         width: 1,
                     },
                     move: {
@@ -91,7 +83,7 @@ function App() {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 3,
                         straight: false,
                     },
                     number: {
@@ -99,16 +91,16 @@ function App() {
                             enable: true,
                             area: 800,
                         },
-                        value: 80,
+                        value: 60,
                     },
                     opacity: {
                         value: 0.5,
                     },
                     shape: {
-                        type: "circle",
+                        type: ["circle", "triangle"],
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: { min: 1, max: 7 },
                     },
                 },
                 detectRetina: true,

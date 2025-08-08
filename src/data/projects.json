@@ -1,32 +1,38 @@
 [
-    {
-        "img": "../SmartPortables.png",
-        "header": "Smart Portables",
-        "description": "Built an E-Commerce web application for purchasing electronic items online using Apache Tomcat, Servlet, Java, MongoDB, and MySQL.",
-        "github_link": "https://github.com/rahulbhatra/SmartPortables"
-    },
-    {
-        "img": "../HomeWeather.png",
-        "header": "Home Weather",
-        "description": "Constructed Android Weather Application to see current weather with next 48 hours hourly and next 7 day weather predictions.",
-        "github_link": "https://github.com/rahulbhatra/HomeWeather"
-    },
-    {
-        "img": "../separating_points.jpg",
-        "header": "Separating Points By Axis Parallel Lines",
-        "description": "SEPARATING POINTS BY AXIS-PARALLEL LINES has applications to fault-tolerant multi modal sensor fusion in the context of embedded sensor networks.",
-        "github_link": "https://github.com/rahulbhatra/SEPARATING-POINTS-BY-AXIS-PARALLEL-LINES"
-    },
-    {
-        "img": "../separating_points.jpg",
-        "header": "Crime Analysis And Prediction",
-        "description": "Analyzed Crime in the Chicago City and Used different regression models to compare the accuracy of predictions. Used the combination of Time-series and expanding window techniques to get the predictions.",
-        "github_link": "https://github.com/rahulbhatra/crime_rate_analysis_and_prediction"
-    },
-    {
-        "img": "../separating_points.jpg",
-        "header": "Portfolio",
-        "description": "Implemented Portfolio Application Using React, JavaScript, Bootstrap, HTML5 and CSS3.",
-        "github_link": "https://github.com/rahulbhatra/me"
-    }
+  {
+    "img": "../SmartPortables.png",
+    "header": "Smart Portables",
+    "description": "Full‑stack e‑commerce platform for consumer electronics built on Java Servlets/Tomcat with MongoDB + MySQL. Features catalog search, shopping cart, checkout, order history, and an admin dashboard for inventory & pricing. Focused on clean domain modeling and ACID guarantees for orders.",
+    "github_link": "https://github.com/rahulbhatra/SmartPortables",
+    "tags": ["Java", "Servlets", "Tomcat", "MySQL", "MongoDB", "E‑commerce"]
+  },
+  {
+    "img": "../HomeWeather.png",
+    "header": "Home Weather",
+    "description": "Android app showing current conditions, next 48‑hour hourly, and 7‑day forecasts with location awareness and graceful error states. Consumes a public weather REST API and caches recent results to reduce calls.",
+    "github_link": "https://github.com/rahulbhatra/HomeWeather",
+    "tags": ["Android", "Java", "REST API", "Caching", "Mobile"]
+  },
+  {
+    "img": "../separating_points.jpg",
+    "header": "Separating Points by Axis‑Parallel Lines",
+    "description": "Algorithmic toolkit that explores separating planar point sets with axis‑parallel lines, including heuristics and exact routines. Includes visualization, complexity analysis, and experiment harness for benchmarking on synthetic datasets.",
+    "github_link": "https://github.com/rahulbhatra/SEPARATING-POINTS-BY-AXIS-PARALLEL-LINES",
+    "tags": ["Algorithms", "Computational Geometry", "Heuristics", "Visualization"]
+  },
+  {
+    "img": "../separating_points.jpg",
+    "header": "Crime Analysis & Prediction",
+    "description": "Exploratory + predictive analytics on Chicago crime data. Combined time‑series techniques (expanding window) with ML baselines to compare forecast accuracy; built clean data pipelines and visual dashboards for trend analysis.",
+    "github_link": "https://github.com/rahulbhatra/crime_rate_analysis_and_prediction",
+    "tags": ["Python", "Pandas", "Time‑Series", "Forecasting", "ML", "Visualization"]
+  },
+  {
+    "img": "../separating_points.jpg",
+    "header": "Portfolio",
+    "description": "Personal site showcasing projects, experience, and writing. Built with React + Tailwind, animated particles, EmailJS contact form, and a responsive design system.",
+    "github_link": "https://github.com/rahulbhatra/me",
+    "demo_link": "https://rahulbhatra.github.io/me",
+    "tags": ["React", "Tailwind CSS", "EmailJS", "GitHub Pages", "SPA"]
+  }
 ]

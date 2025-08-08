@@ -1,42 +1,63 @@
-import React from 'react';
-
-// React Font Awesome
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
+const navItems = [
+  { href: '/me/#skills', label: 'SKILLS', key: 'skills' },
+  { href: '/me/#projects', label: 'PROJECTS', key: 'projects' },
+  { href: '/me/#experience', label: 'EXPERIENCE', key: 'experience' },
+  { href: '/me/#about', label: 'ABOUT', key: 'about' },
+  { href: '/me/#contact', label: 'CONTACT', key: 'contact' }
+];
+
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    return (
-        <nav id="navbar" className="navbar navbar-expand-lg navbar-light fixed-top">
-            <div className="container-fluid">
-                <a className="navbar-brand logo" href="/me">Rahul Sharma</a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <FontAwesomeIcon icon={faBars} style={{color: "#fff"}}/>
-                </button>
-
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav ml-auto justify-content-end container-fluid">
-                        <li className="nav-item active" key={'skills'}>
-                            <a className="nav-link" href="/me/#skills">SKILLS</a>
-                        </li>
-                        <li className="nav-item" key={'projects'}>
-                            <a className="nav-link" href="/me/#projects">PROJECTS</a>
-                        </li>
-                        <li className="nav-item" key={'experience'}>
-                            <a className="nav-link" href="/me/#experience">EXPERIENCE </a>
-                        </li>
-                        <li className="nav-item" key={'about_me'}>
-                            <a className="nav-link" href="/me/#about">ABOUT ME</a>
-                        </li>
-                        <li className="nav-item" key={'contact'}>
-                            <a className="nav-link" href="/me/#contact">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    );
-
+  return (
+    <nav className="fixed top-0 left-0 w-full bg-background text-white shadow-lg z-50">
+      <div className="container mx-auto flex items-center justify-between p-4">
+        <a href="/me" className="text-2xl font-bold text-pink">Rahul Sharma</a>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden focus:outline-none"
+          aria-label="Toggle navigation"
+        >
+          <FontAwesomeIcon icon={faBars} className="text-white text-2xl" />
+        </button>
+        <ul className="hidden md:flex space-x-6">
+          {navItems.map((item) => (
+            <li key={item.key}>
+              <a
+                href={item.href}
+                className="hover:text-pink uppercase tracking-wide transition-colors duration-200"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div
+        className={`md:hidden bg-background overflow-hidden transition-all duration-300 ease-in-out ${
+          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        }`}
+      >
+        <ul className="flex flex-col space-y-4 p-4">
+          {navItems.map((item) => (
+            <li key={item.key}>
+              <a
+                href={item.href}
+                className="block hover:text-pink uppercase tracking-wide transition-colors duration-200"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;
