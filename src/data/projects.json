@@ -1,5 +1,14 @@
 [
   {
+    "header": "Document-Grounded Conversational AI Chatbot",
+    "description": [
+      "Developed a Retrieval-Augmented Generation (RAG) pipeline for chatbot that ingests documents, retrieves context, and stream answers.",
+      "Engineered hot-memory caching for summarization prompts, using Redis to manage conversation history; decreased latency by 54% and enhanced response times by 700 milliseconds."
+    ],
+    "github_link": "https://github.com/rahulbhatra/SmartPortables",
+    "tags": ["FastAPI,", "ChromaDB,", "Ollama", "SentenceTransformers,", "React", "Vite", "Tailwind", "Docker", "PostgreSQL"]
+  },
+  {
     "img": "../SmartPortables.png",
     "header": "Smart Portables",
     "description": "Full‑stack e‑commerce platform for consumer electronics built on Java Servlets/Tomcat with MongoDB + MySQL. Features catalog search, shopping cart, checkout, order history, and an admin dashboard for inventory & pricing. Focused on clean domain modeling and ACID guarantees for orders.",

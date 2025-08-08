@@ -6,7 +6,7 @@ import Portfolio from '../portfolio.jpg';
 import SmartPortables from '../SmartPortables.png';
 import HomeWeather from '../HomeWeather.png';
 
-const images = [SmartPortables, HomeWeather, SeparatingPoints, CrimeAnalysis, Portfolio];
+const images = [null, SmartPortables, HomeWeather, SeparatingPoints, CrimeAnalysis, Portfolio];
 
 const Projects = () => {
   return (
