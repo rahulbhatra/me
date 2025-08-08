@@ -57,7 +57,28 @@ const ProjectCard = ({ project, image }) => {
       <div className="relative p-5 sm:p-6">
         <h3 className="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 via-pink-500 to-cyan-600">{project.header}</h3>
         <div className="mt-2 h-1 w-12 rounded-full bg-gradient-to-r from-emerald-400 to-pink-400" />
-        <p className="mt-4 text-base leading-7 text-gray-700 whitespace-pre-line">{project.description}</p>
+        {Array.isArray(project.description) ? (
+          <div className="mt-4 rounded-xl bg-gray-50/80 ring-1 ring-gray-200 shadow-sm p-4 sm:p-5">
+            <ul className="space-y-3">
+              {project.description.map((d, i) => (
+                <li key={`${project.header}-desc-${i}`} className="flex items-start gap-3 text-[15px] leading-7 text-gray-800">
+                  <span className="mt-1 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full bg-emerald-100 ring-1 ring-emerald-300">
+                    <svg viewBox="0 0 20 20" fill="currentColor" className="h-3 w-3 text-emerald-700">
+                      <path fillRule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.01 7.01a1 1 0 01-1.42 0L3.296 8.734a1 1 0 111.414-1.414l3.155 3.155 6.303-6.303a1 1 0 011.536 0z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                  <span className="whitespace-pre-line">{d}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <div className="mt-4 rounded-xl border-l-4 border-emerald-400 bg-gray-50/80 p-4 sm:p-5 ring-1 ring-gray-200 shadow-sm">
+            <p className="text-[15px] leading-7 text-gray-800 whitespace-pre-line">
+              {project.description}
+            </p>
+          </div>
+        )}
 
         {Array.isArray(project.highlights) && project.highlights.length > 0 && (
           <ul className="mt-4 space-y-2 text-sm text-gray-700">
