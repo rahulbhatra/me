@@ -24,7 +24,7 @@ const Experience = () => {
                             iconStyle={{ backgroundColor: '#141628'}}
                             icon=
                             {
-                                <div className="timeline-icon text-uppercase">{experience.icon}</div>
+                                <div className="timeline-icon flex-center text-uppercase">{experience.icon}</div>
                             }
                         >
                             <h5 className="vertical-timeline-element-title">{experience.date}</h5>
@@ -33,7 +33,7 @@ const Experience = () => {
                             <div className="description text-muted">
                                 <h5 className="text-bold">{experience.title}</h5>
                                 <ul align="justify">
-                                    {experience.descriptions.map(description => {
+                                    {experience.descriptions.map((description, i) => {
                                         return (
                                             <li key={description.id}>{description.work}</li>
                                         )

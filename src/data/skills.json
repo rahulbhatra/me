@@ -6,6 +6,18 @@
     "icon": "devicon-java-plain"
   },
   {
+    "id": 1,
+    "name": "Groovy",
+    "progress": 100,
+    "icon": "devicon-groovy-plain"
+  },
+  {
+    "id": 2,
+    "name": "TypeScript",
+    "progress": 100,
+    "icon": "devicon-typescript-plain"
+  },
+  {
     "id": 2,
     "name": "JavaScript",
     "progress": 100,
@@ -60,6 +72,12 @@
     "icon": "devicon-jira-plain"
   },
   {
+    "id": 10,
+    "name": "Confluence",
+    "progress": 100,
+    "icon": "devicon-confluence-plain"
+  },
+  {
     "id": 11,
     "name": "IntelliJ IDEA",
     "progress": 100,
@@ -73,27 +91,27 @@
   },
   {
     "id": 13,
+    "name": "MongoDb",
+    "progress": 100,
+    "icon": "devicon-mongodb-plain"
+  },
+  {
+    "id": 13,
     "name": "MySql",
     "progress": 100,
     "icon": "devicon-mysql-plain"
   },
   {
-    "id": 14,
-    "name": "Ubuntu",
+    "id": 17,
+    "name": "Grails",
     "progress": 100,
-    "icon": "devicon-ubuntu-plain"
+    "icon": "devicon-grails-plain"
   },
   {
-    "id": 15,
-    "name": "Windows",
+    "id": 17,
+    "name": "Micronaut",
     "progress": 100,
-    "icon": "devicon-windows8-plain"
-  },
-  {
-    "id": 16,
-    "name": "MacOs",
-    "progress": 100,
-    "icon": "devicon-apple-plain"
+    "icon": "devicon-micronaut-plain"
   },
   {
     "id": 17,
@@ -148,5 +166,23 @@
     "name": "React",
     "progress": 100,
     "icon": "devicon-react-plain"
+  },
+  {
+    "id": 14,
+    "name": "Ubuntu",
+    "progress": 100,
+    "icon": "devicon-ubuntu-plain"
+  },
+  {
+    "id": 15,
+    "name": "Windows",
+    "progress": 100,
+    "icon": "devicon-windows8-plain"
+  },
+  {
+    "id": 16,
+    "name": "MacOs",
+    "progress": 100,
+    "icon": "devicon-apple-plain"
   }
 ]
