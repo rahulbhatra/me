@@ -1,45 +1,46 @@
 [
   {
-    "id": 1,
-    "name": "Java",
+    "id": 25,
+    "name": "React",
     "progress": 100,
-    "icon": "devicon-java-plain"
+    "icon": "devicon-react-plain",
+    "category": "Frontend"
   },
   {
-    "id": 1,
-    "name": "Groovy",
+    "id": 23,
+    "name": "Angular",
     "progress": 100,
-    "icon": "devicon-groovy-plain"
+    "icon": "devicon-angularjs-plain",
+    "category": "Frontend"
   },
+  {
+    "id": 23,
+    "name": "Material UI",
+    "progress": 100,
+    "icon": "devicon-materialui-plain",
+    "category": "Frontend"
+  },
+  {
+    "id": 24,
+    "name": "Bootstrap",
+    "progress": 100,
+    "icon": "devicon-bootstrap-plain",
+    "category": "Frontend"
+  },
+  
   {
     "id": 2,
     "name": "TypeScript",
     "progress": 100,
-    "icon": "devicon-typescript-plain"
+    "icon": "devicon-typescript-plain",
+    "category": "Frontend"
   },
   {
     "id": 2,
     "name": "JavaScript",
     "progress": 100,
-    "icon": "devicon-javascript-plain"
-  },
-  {
-    "id": 3,
-    "name": "C",
-    "progress": 100,
-    "icon": "devicon-c-plain"
-  },
-  {
-    "id": 4,
-    "name": "C++",
-    "progress": 100,
-    "icon": "devicon-cplusplus-plain"
-  },
-  {
-    "id": 5,
-    "name": "Python",
-    "progress": 100,
-    "icon": "devicon-python-plain"
+    "icon": "devicon-javascript-plain",
+    "category": "Frontend"
   },
   {
     "id": 6,
@@ -52,6 +53,84 @@
     "name": "CSS3",
     "progress": 100,
     "icon": "devicon-css3-plain"
+  },
+  {
+    "id": 1,
+    "name": "Java",
+    "progress": 100,
+    "icon": "devicon-java-plain",
+    "category": "Backend"
+  },
+  {
+    "id": 1,
+    "name": "Groovy",
+    "progress": 100,
+    "icon": "devicon-groovy-plain",
+    "category": "Backend"
+  },
+  {
+    "id": 1,
+    "name": "Go Lang",
+    "progress": 100,
+    "icon": "devicon-go-plain",
+    "category": "Backend"
+  },
+  {
+    "id": 3,
+    "name": "C",
+    "progress": 100,
+    "icon": "devicon-c-plain",
+    "category": "Backend"
+  },
+  {
+    "id": 4,
+    "name": "C++",
+    "progress": 100,
+    "icon": "devicon-cplusplus-plain",
+    "category": "Backend"
+  },
+  {
+    "id": 5,
+    "name": "Python",
+    "progress": 100,
+    "icon": "devicon-python-plain",
+    "category": "Backend"
+  },
+  {
+    "id": 17,
+    "name": "Grails",
+    "progress": 100,
+    "icon": "devicon-grails-plain"
+  },
+  {
+    "id": 17,
+    "name": "Micronaut",
+    "progress": 100,
+    "icon": "devicon-micronaut-plain"
+  },
+  {
+    "id": 17,
+    "name": "Spring",
+    "progress": 100,
+    "icon": "devicon-spring-plain"
+  },
+  {
+    "id": 18,
+    "name": "Spring Boot",
+    "progress": 100,
+    "icon": "devicon-spring-plain"
+  },
+  {
+    "id": 19,
+    "name": "Spring MVC",
+    "progress": 100,
+    "icon": "devicon-spring-plain"
+  },
+  {
+    "id": 20,
+    "name": "Spring Security",
+    "progress": 100,
+    "icon": "devicon-spring-plain"
   },
   {
     "id": 8,
@@ -102,42 +181,6 @@
     "icon": "devicon-mysql-plain"
   },
   {
-    "id": 17,
-    "name": "Grails",
-    "progress": 100,
-    "icon": "devicon-grails-plain"
-  },
-  {
-    "id": 17,
-    "name": "Micronaut",
-    "progress": 100,
-    "icon": "devicon-micronaut-plain"
-  },
-  {
-    "id": 17,
-    "name": "Spring",
-    "progress": 100,
-    "icon": "devicon-spring-plain"
-  },
-  {
-    "id": 18,
-    "name": "Spring Boot",
-    "progress": 100,
-    "icon": "devicon-spring-plain"
-  },
-  {
-    "id": 19,
-    "name": "Spring MVC",
-    "progress": 100,
-    "icon": "devicon-spring-plain"
-  },
-  {
-    "id": 20,
-    "name": "Spring Security",
-    "progress": 100,
-    "icon": "devicon-spring-plain"
-  },
-  {
     "id": 21,
     "name": "Android",
     "progress": 100,
@@ -148,24 +191,6 @@
     "name": "Django",
     "progress": 100,
     "icon": "devicon-django-plain"
-  },
-  {
-    "id": 23,
-    "name": "Angular",
-    "progress": 100,
-    "icon": "devicon-angularjs-plain"
-  },
-  {
-    "id": 24,
-    "name": "Bootstrap",
-    "progress": 100,
-    "icon": "devicon-bootstrap-plain"
-  },
-  {
-    "id": 25,
-    "name": "React",
-    "progress": 100,
-    "icon": "devicon-react-plain"
   },
   {
     "id": 14,
