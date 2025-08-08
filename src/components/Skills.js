@@ -1,11 +1,23 @@
+const container = {
+  hidden: {},
+  show: {
+    transition: { staggerChildren: 0.06, delayChildren: 0.05 },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 16 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.35, ease: 'easeOut' } },
+};
 import React from 'react';
 import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 import { useInView } from 'react-intersection-observer';
 import skills from '../data/skills.json';
+import { motion } from 'framer-motion';
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-16 md:py-24 bg-gray-50">
+    <section id="skills" className="py-16 md:py-24 bg-gray-50 dark:bg-gray-950">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 via-pink-500 to-cyan-600 uppercase">Skills</h2>
@@ -13,11 +25,17 @@ const Skills = () => {
         </div>
 
         {/* Skill grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-8">
+        <motion.div
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-8"
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.15 }}
+        >
           {skills.map((skill) => (
             <SkillItem key={skill.id} skill={skill} />)
           )}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
@@ -29,9 +47,11 @@ const SkillItem = ({ skill }) => {
   const col = skill.color || '#10b981';
 
   return (
-    <div
-      className="group relative rounded-xl bg-white p-4 shadow-sm ring-1 ring-gray-200 transition hover:-translate-y-1 hover:shadow-lg"
+    <motion.div
+      className="group relative rounded-xl bg-white dark:bg-gray-900 p-4 shadow-sm ring-1 ring-gray-200 dark:ring-gray-800 transition hover:-translate-y-1 hover:shadow-lg"
       title={`${skill.name} • ${skill.progress}%`}
+      variants={item}
+      style={{ willChange: 'transform, opacity' }}
     >
       <div ref={ref}>
         {/* Circle wrapper with colored glow */}
@@ -57,7 +77,7 @@ const SkillItem = ({ skill }) => {
 
           {/* Percentage badge */}
           <span
-            className="absolute -bottom-2 right-0 rounded-full bg-white px-2 py-0.5 text-[11px] font-semibold text-gray-900 ring-1 ring-gray-200 shadow-sm"
+            className="absolute -bottom-2 right-0 rounded-full bg-white dark:bg-gray-800 px-2 py-0.5 text-[11px] font-semibold text-gray-900 dark:text-gray-100 ring-1 ring-gray-200 dark:ring-gray-700 shadow-sm"
             style={{ color: '#0b1220' }}
             aria-hidden
           >
@@ -67,12 +87,12 @@ const SkillItem = ({ skill }) => {
       </div>
 
       {/* Name */}
-      <h6 className="mt-3 text-center text-sm font-semibold text-gray-800">{skill.name}</h6>
+      <h6 className="mt-3 text-center text-sm font-semibold text-gray-800 dark:text-gray-100">{skill.name}</h6>
 
       {/* Color pill */}
       <div className="mt-2 flex justify-center">
         <span
-          className="inline-flex items-center gap-2 rounded-full px-2.5 py-1 text-[11px] font-medium ring-1 ring-inset"
+          className="inline-flex items-center gap-2 rounded-full px-2.5 py-1 text-[11px] font-medium ring-1 ring-inset dark:text-gray-100 dark:ring-gray-700"
           style={{ backgroundColor: hexToRgba(col, 0.08), color: col, borderColor: hexToRgba(col, 0.25) }}
         >
           <span className="h-2 w-2 rounded-full" style={{ backgroundColor: col }} aria-hidden />
@@ -82,7 +102,7 @@ const SkillItem = ({ skill }) => {
 
       {/* Hover underline accent */}
       <div className="pointer-events-none mt-3 h-0.5 w-0 bg-gradient-to-r from-emerald-400 via-pink-400 to-cyan-400 transition-[width] duration-300 group-hover:w-full" />
-    </div>
+    </motion.div>
   );
 };
 
