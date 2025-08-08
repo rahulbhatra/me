@@ -1,6 +1,128 @@
 [
     {
         "id": 1,
+        "title": "Full Stack Software Engineer 2",
+        "company": "Cohere Health, Inc.",
+        "location": "Remote",
+        "date": "March 2024 - Present",
+        "icon": "Cohere Health",
+        "descriptions": [
+            {
+                "id": 1,
+                "work": "Revamped the notification system by migrating from a scheduled job to an event-driven architecture using Kafka; introduced a dynamic, decision tree-based notification type selection (payer-agnostic), reducing operational costs by 95%"
+            },
+            {
+                "id": 2,
+                "work": "Engineered a multi-tenancy architecture enabling multiple tenants to share a single schema, optimizing resource usage and simplifying maintenance."
+            },
+            {
+                "id": 3,
+                "work": "Accelerated client onboarding by developing configuration-driven solutions, significantly reducing setup time for new customers in the portal."
+            },
+            {
+                "id": 4,
+                "work": "Designed and implemented an appeal workflow for authorization requests on the portal; built a configurable UI that dynamically renders required/optional fields based on payer-agnostic rules."
+            }
+            ,
+            {
+                "id": 5,
+                "work": "Reduced backend load and improved performance by minimizing redundant payer configuration queries using React Context for frontend state management."
+            }
+            ,
+            {
+                "id": 6,
+                "work": "Enhanced transactional reliability by preventing unintended transaction flushing in the database, significantly reducing transactional errors in the system."
+            }
+            ,
+            {
+                "id": 7,
+                "work": "Led release operations as Release Captain, ensuring timely, stable, and well-coordinated roll outs for new features and projects."
+            }
+            ,
+            {
+                "id": 8,
+                "work": "Authored and evaluated multiple architectural designs, analyzing trade-offs to guide strategic technical decisions and future-proof implementations."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Full Stack Software Engineer",
+        "company": "Cohere Health, Inc.",
+        "location": "Remote",
+        "date": "Jan 2022 - March 2024",
+        "icon": "Cohere Health",
+        "descriptions": [
+            {
+                "id": 1,
+                "work": "Build a service request manual review workflow for patients when they receive medical care and stay overnight (inpatient stay)."
+            },
+            {
+                "id": 2,
+                "work": "Led claims data surface project that facilitates 50% of Durable Medical Equipment services."
+            },
+            {
+                "id": 3,
+                "work": "Guided Co-op/intern by providing knowledge of the product and solving blocks to streamline their success in the tech world."
+            },
+            {
+                "id": 4,
+                "work": "Guided Co-op/intern by providing knowledge of products and solving blocks to streamline their success in the tech world."
+            }
+            ,
+            {
+                "id": 5,
+                "work": "Active participation in grooming, tasking, and tech discussion. Actively led code refactors, engaged in tech preventative care, solved slow queries, and resolved prod issues."
+            }
+            ,
+            {
+                "id": 6,
+                "work": "Worked on prior authorization request automation and system to auto-approve it."
+            }
+            ,
+            {
+                "id": 7,
+                "work": "Worked on the queue management system to optimize & calculate work done per hour by users."
+            }
+            ,
+            {
+                "id": 8,
+                "work": "Provided pdf rendering capabilities, search, zoom in, zoom out, and rotate capabilities to the system."
+            }
+            ,
+            {
+                "id": 9,
+                "work": "Tracked data of in-app users eg. clicks, and user searches keywords to provide data for product analysis."
+            }
+            ,
+            {
+                "id": 10,
+                "work": "Identified and resolved bug of sending duplicate faxes to clients reduced the extra cost of 1800$ per month."
+            }
+            ,
+            {
+                "id": 11,
+                "work": "Built a system to log manual attempts of agents of outreach to product users."
+            }
+            ,
+            {
+                "id": 12,
+                "work": "Added Giphy gifs to the product and used them as appreciation symbol at the end of workflow to users."
+            }
+            ,
+            {
+                "id": 13,
+                "work": "Created backend API's on Micronaut and Grails Platform and leveraged the Spock framework for API testing."
+            }
+            ,
+            {
+                "id": 14,
+                "work": "Moved from default to custom health checkpoint of the application for availability status information."
+            }
+        ]
+    },
+    {
+        "id": 3,
         "title": "Graduate Teaching Assistant",
         "company": "Illinois Institute of Technology",
         "location": "Chicago, Illinois/USA",
@@ -18,7 +140,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Software Engineer",
         "company": "Metacube Software Pvt Ltd",
         "location": "Jaipur, Rajasthan/India",
@@ -64,7 +186,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 5,
         "title": "Trainee",
         "company": "BSNL Telecom Factory",
         "location": "Jaipur, Rajasthan (India)",
@@ -78,7 +200,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": 6,
         "title": "Trainee",
         "company": "The National Institute of Information Technology (NIIT)",
         "location": "Jaipur, Rajasthan (India)",

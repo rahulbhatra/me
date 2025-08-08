@@ -31,7 +31,7 @@ const Experience = () => {
                             <h5 className="vertical-timeline-element-title">{experience.company}</h5>
                             <h5 className="vertical-timeline-element-subtitle text-muted">{experience.location}</h5>
                             <div className="description text-muted">
-                                <h4 className="text-bold">{experience.title}</h4>
+                                <h5 className="text-bold">{experience.title}</h5>
                                 <ul align="justify">
                                     {experience.descriptions.map(description => {
                                         return (

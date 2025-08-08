@@ -8,7 +8,7 @@ const About = () => {
             <div className="container">
                 <div className="text-center">
                     <h2 className="second-section-heading text-uppercase">About Me</h2>
-                    <h3 className="section-subheading text-muted">
+                    <h3 className="section-subheading text-white">
                         Genius is 1% talent and 99% hardwork.
                     </h3>
                     <img src={ProfilePhoto} className="rounded-circle" style={{width: '200px'}} />
