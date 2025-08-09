@@ -1,213 +1,200 @@
 [
   {
-    "id": 25,
     "name": "React",
     "progress": 100,
     "icon": "devicon-react-plain",
     "category": "Frontend"
   },
   {
-    "id": 23,
     "name": "Angular",
     "progress": 100,
     "icon": "devicon-angularjs-plain",
     "category": "Frontend"
   },
   {
-    "id": 23,
     "name": "Material UI",
     "progress": 100,
     "icon": "devicon-materialui-plain",
     "category": "Frontend"
   },
   {
-    "id": 24,
     "name": "Bootstrap",
     "progress": 100,
     "icon": "devicon-bootstrap-plain",
     "category": "Frontend"
   },
-  
   {
-    "id": 2,
     "name": "TypeScript",
     "progress": 100,
     "icon": "devicon-typescript-plain",
     "category": "Frontend"
   },
   {
-    "id": 2,
     "name": "JavaScript",
     "progress": 100,
     "icon": "devicon-javascript-plain",
     "category": "Frontend"
   },
   {
-    "id": 6,
     "name": "HTML5",
     "progress": 100,
-    "icon": "devicon-html5-plain"
+    "icon": "devicon-html5-plain",
+    "category": "Frontend"
   },
   {
-    "id": 7,
     "name": "CSS3",
     "progress": 100,
-    "icon": "devicon-css3-plain"
+    "icon": "devicon-css3-plain",
+    "category": "Frontend"
   },
   {
-    "id": 1,
     "name": "Java",
     "progress": 100,
     "icon": "devicon-java-plain",
     "category": "Backend"
   },
   {
-    "id": 1,
     "name": "Groovy",
     "progress": 100,
     "icon": "devicon-groovy-plain",
     "category": "Backend"
   },
   {
-    "id": 1,
     "name": "Go Lang",
     "progress": 100,
     "icon": "devicon-go-plain",
     "category": "Backend"
   },
   {
-    "id": 3,
     "name": "C",
     "progress": 100,
     "icon": "devicon-c-plain",
     "category": "Backend"
   },
   {
-    "id": 4,
     "name": "C++",
     "progress": 100,
     "icon": "devicon-cplusplus-plain",
     "category": "Backend"
   },
   {
-    "id": 5,
     "name": "Python",
     "progress": 100,
     "icon": "devicon-python-plain",
     "category": "Backend"
   },
   {
-    "id": 17,
     "name": "Grails",
     "progress": 100,
-    "icon": "devicon-grails-plain"
+    "icon": "devicon-grails-plain",
+    "category": "Backend"
   },
   {
-    "id": 17,
     "name": "Micronaut",
     "progress": 100,
-    "icon": "devicon-micronaut-plain"
+    "icon": "devicon-micronaut-plain",
+    "category": "Backend"
   },
   {
-    "id": 17,
     "name": "Spring",
     "progress": 100,
-    "icon": "devicon-spring-plain"
+    "icon": "devicon-spring-plain",
+    "category": "Backend"
   },
   {
-    "id": 18,
     "name": "Spring Boot",
     "progress": 100,
-    "icon": "devicon-spring-plain"
+    "icon": "devicon-spring-plain",
+    "category": "Backend"
   },
   {
-    "id": 19,
     "name": "Spring MVC",
     "progress": 100,
-    "icon": "devicon-spring-plain"
+    "icon": "devicon-spring-plain",
+    "category": "Backend"
   },
   {
-    "id": 20,
     "name": "Spring Security",
     "progress": 100,
-    "icon": "devicon-spring-plain"
+    "icon": "devicon-spring-plain",
+    "category": "Backend"
   },
   {
-    "id": 8,
-    "name": "Shell Scripting",
-    "progress": 100,
-    "icon": "devicon-c-plain"
-  },
-  {
-    "id": 9,
-    "name": "Git",
-    "progress": 100,
-    "icon": "devicon-git-plain"
-  },
-  {
-    "id": 10,
-    "name": "Jira",
-    "progress": 100,
-    "icon": "devicon-jira-plain"
-  },
-  {
-    "id": 10,
-    "name": "Confluence",
-    "progress": 100,
-    "icon": "devicon-confluence-plain"
-  },
-  {
-    "id": 11,
-    "name": "IntelliJ IDEA",
-    "progress": 100,
-    "icon": "devicon-intellij-plain"
-  },
-  {
-    "id": 12,
-    "name": "PyCharm",
-    "progress": 100,
-    "icon": "devicon-pycharm-plain"
-  },
-  {
-    "id": 13,
-    "name": "MongoDb",
-    "progress": 100,
-    "icon": "devicon-mongodb-plain"
-  },
-  {
-    "id": 13,
-    "name": "MySql",
-    "progress": 100,
-    "icon": "devicon-mysql-plain"
-  },
-  {
-    "id": 21,
-    "name": "Android",
-    "progress": 100,
-    "icon": "devicon-android-plain"
-  },
-  {
-    "id": 22,
     "name": "Django",
     "progress": 100,
-    "icon": "devicon-django-plain"
+    "icon": "devicon-django-plain",
+    "category": "Backend"
   },
   {
-    "id": 14,
+    "name": "MongoDb",
+    "progress": 100,
+    "icon": "devicon-mongodb-plain",
+    "category": "Database"
+  },
+  {
+    "name": "MySql",
+    "progress": 100,
+    "icon": "devicon-mysql-plain",
+    "category": "Database"
+  },
+  {
+    "name": "Shell Scripting",
+    "progress": 100,
+    "icon": "devicon-c-plain",
+    "category": "Backend"
+  },
+  {
+    "name": "Git",
+    "progress": 100,
+    "icon": "devicon-git-plain",
+    "category": "DevOps"
+  },
+  {
+    "name": "Jira",
+    "progress": 100,
+    "icon": "devicon-jira-plain",
+    "category": "Tools"
+  },
+  {
+    "name": "Confluence",
+    "progress": 100,
+    "icon": "devicon-confluence-plain",
+    "category": "Tools"
+  },
+  {
+    "name": "IntelliJ IDEA",
+    "progress": 100,
+    "icon": "devicon-intellij-plain",
+    "category": "Tools"
+  },
+  {
+    "name": "PyCharm",
+    "progress": 100,
+    "icon": "devicon-pycharm-plain",
+    "category": "Tools"
+  },
+  {
+    "name": "Android",
+    "progress": 100,
+    "icon": "devicon-android-plain",
+    "category": "Mobile"
+  },
+  {
     "name": "Ubuntu",
     "progress": 100,
-    "icon": "devicon-ubuntu-plain"
+    "icon": "devicon-ubuntu-plain",
+    "category": "Operating System"
   },
   {
-    "id": 15,
     "name": "Windows",
     "progress": 100,
-    "icon": "devicon-windows8-plain"
+    "icon": "devicon-windows8-plain",
+    "category": "Operating System"
   },
   {
-    "id": 16,
     "name": "MacOs",
     "progress": 100,
-    "icon": "devicon-apple-plain"
+    "icon": "devicon-apple-plain",
+    "category": "Operating System"
   }
 ]

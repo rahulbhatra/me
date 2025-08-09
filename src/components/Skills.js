@@ -1,10 +1,3 @@
-const container = {
-  hidden: {},
-  show: {
-    transition: { staggerChildren: 0.06, delayChildren: 0.05 },
-  },
-};
-
 const item = {
   hidden: { opacity: 0, y: 16 },
   show: { opacity: 1, y: 0, transition: { duration: 0.35, ease: 'easeOut' } },
@@ -25,17 +18,13 @@ const Skills = () => {
         </div>
 
         {/* Skill grid */}
-        <motion.div
+        <div
           className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-8"
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.15 }}
         >
           {skills.map((skill) => (
-            <SkillItem key={skill.id} skill={skill} />)
+            <SkillItem key={skill.name} skill={skill} />)
           )}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
@@ -71,7 +60,7 @@ const SkillItem = ({ skill }) => {
             })}
           >
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-              <i className={`${skill.icon} text-white text-4xl`} aria-hidden="true"></i>
+              {skill.name === "Micronaut" ? (<i className={`text-white text-4xl`} aria-hidden="true">M</i>) : (<i className={`${skill.icon} text-white text-4xl`} aria-hidden="true"></i>)}
             </div>
           </CircularProgressbarWithChildren>
 

@@ -12,15 +12,16 @@ const Experience = () => {
           <p className="mt-3 text-base md:text-lg text-gray-500">Experience is a story told over time.</p>
         </div>
 
-        <VerticalTimeline animate={true} lineColor="#0e337cff" className="[&_.vertical-timeline-element-date]:text-gray-500">
+        <VerticalTimeline animate={true} lineColor="transparent" className="[&_.vertical-timeline-element-date]:text-gray-500">
           {experiences.map((experience) => {
             return (
             <VerticalTimelineElement
               key={experience.id}
               contentStyle={{ background: 'rgba(17,24,39,0.85)', color: '#fff', borderRadius: '0.75rem', boxShadow: '0 10px 25px rgba(0,0,0,0.15)' }}
               contentArrowStyle={{ borderRight: '7px solid rgba(17,24,39,0.85)' }}
-              iconStyle={{ color: '#fff', boxShadow: '0 0 0 6px rgba(16,185,129,0.35)' }}
+              iconStyle={{ color: '#fff', boxShadow: '0 0 0 6px rgba(16, 185, 129, 0.35)' }}
               icon={ <div className="timeline-icon">{experience.icon} </div>}
+              className="timeline-line"
             >
               {/* Date */}
               <p className="text-xs uppercase tracking-wide text-emerald-300/90">{experience.date}</p>
