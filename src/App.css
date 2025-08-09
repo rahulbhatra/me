@@ -24,50 +24,6 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-/* NavBar */
-nav {
-  background-color: var(--background-color) !important;
-  z-index: 2;
-}
-
-nav a.navbar-brand {
-  max-width: 17.25rem;
-}
-
-nav a.navbar-brand.logo {
-  width: 16.25rem;
-  font-family: 'Dancing Script', cursive;
-  color: var(--primary-white);
-  font-size: var(--fontSuperBig);
-}
-
-nav a.navbar-brand:hover {
-  color: var(--pink) !important;
-}
-
-
-nav a.nav-link {
-  letter-spacing: 0.0375rem;
-  cursor: pointer;
-}
-
-
-nav ul li {
-  text-transform: uppercase;
-}
-
-.navbar-nav > li > a {
-  margin: 0.75rem 0; 
-  color: var(--primary-white) !important;
-  font-size: var(--fontSmall);
-  border-top: 0.1875rem solid var(--primary-dark);
-}
-
-.navbar-nav > li > a:active, .navbar-nav > li > a:focus, .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--pink) !important;
-  color: var(--pink) !important;
-}
-
 /* .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--pink);
   color: var(--pink) !important;

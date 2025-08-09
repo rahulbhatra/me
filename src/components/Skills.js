@@ -1,3 +1,13 @@
+const CATEGORY_COLORS = {
+  Frontend: '#06b6d4',    // cyan-500
+  Backend: '#f59e0b',     // amber-500
+  Database: '#10b981',    // emerald-500
+  DevOps: '#6366f1',      // indigo-500
+  Tools: '#64748b',       // slate-500
+  Mobile: '#22c55e',      // green-500
+  Framework: '#a855f7',   // purple-500
+  OS: '#94a3b8', // slate-400
+};
 const item = {
   hidden: { opacity: 0, y: 16 },
   show: { opacity: 1, y: 0, transition: { duration: 0.35, ease: 'easeOut' } },
@@ -10,7 +20,7 @@ import { motion } from 'framer-motion';
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-16 md:py-24 bg-gray-50 dark:bg-gray-950">
+    <section id="skills" className="py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 via-pink-500 to-cyan-600 uppercase">Skills</h2>
@@ -33,15 +43,21 @@ const Skills = () => {
 const SkillItem = ({ skill }) => {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.3 });
   const percentage = inView ? skill.progress : 0;
-  const col = skill.color || '#10b981';
+  const col = CATEGORY_COLORS[skill.category] || skill.color || '#10b981';
 
   return (
-    <motion.div
-      className="group relative rounded-xl bg-white dark:bg-gray-900 p-4 shadow-sm ring-1 ring-gray-200 dark:ring-gray-800 transition hover:-translate-y-1 hover:shadow-lg"
-      title={`${skill.name} • ${skill.progress}%`}
-      variants={item}
-      style={{ willChange: 'transform, opacity' }}
-    >
+    <div className="group relative">
+      {/* Hover gradient frame (appears outside the card) */}
+      <span
+        aria-hidden
+        className="pointer-events-none absolute -inset-[2px] rounded-[14px] opacity-0 transition duration-300 group-hover:opacity-100 bg-gradient-to-r from-emerald-400 via-pink-400 to-cyan-400"
+      />
+      <motion.div
+        className="relative rounded-xl bg-white dark:bg-gray-900 p-4 shadow-sm ring-1 ring-gray-200 dark:ring-gray-800 transition hover:-translate-y-1 hover:shadow-lg"
+        title={`${skill.name} • ${skill.progress}%`}
+        variants={item}
+        style={{ willChange: 'transform, opacity' }}
+      >
       <div ref={ref}>
         {/* Circle wrapper with colored glow */}
         <div
@@ -91,7 +107,7 @@ const SkillItem = ({ skill }) => {
 
       {/* Hover underline accent */}
       <div className="pointer-events-none mt-3 h-0.5 w-0 bg-gradient-to-r from-emerald-400 via-pink-400 to-cyan-400 transition-[width] duration-300 group-hover:w-full" />
-    </motion.div>
+      </motion.div></div>
   );
 };
 

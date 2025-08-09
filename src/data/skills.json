@@ -1,44 +1,8 @@
 [
   {
-    "name": "React",
-    "progress": 100,
-    "icon": "devicon-react-plain",
-    "category": "Frontend"
-  },
-  {
     "name": "Angular",
     "progress": 100,
     "icon": "devicon-angularjs-plain",
-    "category": "Frontend"
-  },
-  {
-    "name": "Material UI",
-    "progress": 100,
-    "icon": "devicon-materialui-plain",
-    "category": "Frontend"
-  },
-  {
-    "name": "Bootstrap",
-    "progress": 100,
-    "icon": "devicon-bootstrap-plain",
-    "category": "Frontend"
-  },
-  {
-    "name": "TypeScript",
-    "progress": 100,
-    "icon": "devicon-typescript-plain",
-    "category": "Frontend"
-  },
-  {
-    "name": "JavaScript",
-    "progress": 100,
-    "icon": "devicon-javascript-plain",
-    "category": "Frontend"
-  },
-  {
-    "name": "HTML5",
-    "progress": 100,
-    "icon": "devicon-html5-plain",
     "category": "Frontend"
   },
   {
@@ -48,22 +12,46 @@
     "category": "Frontend"
   },
   {
-    "name": "Java",
+    "name": "HTML5",
     "progress": 100,
-    "icon": "devicon-java-plain",
-    "category": "Backend"
+    "icon": "devicon-html5-plain",
+    "category": "Frontend"
   },
   {
-    "name": "Groovy",
+    "name": "JavaScript",
     "progress": 100,
-    "icon": "devicon-groovy-plain",
-    "category": "Backend"
+    "icon": "devicon-javascript-plain",
+    "category": "Frontend"
   },
   {
-    "name": "Go Lang",
+    "name": "React",
     "progress": 100,
-    "icon": "devicon-go-plain",
-    "category": "Backend"
+    "icon": "devicon-react-plain",
+    "category": "Frontend"
+  },
+  {
+    "name": "TypeScript",
+    "progress": 100,
+    "icon": "devicon-typescript-plain",
+    "category": "Frontend"
+  },
+  {
+    "name": "Bootstrap",
+    "progress": 100,
+    "icon": "devicon-bootstrap-plain",
+    "category": "Framework"
+  },
+  {
+    "name": "Material UI",
+    "progress": 100,
+    "icon": "devicon-materialui-plain",
+    "category": "Framework"
+  },
+  {
+    "name": "Tailwind CSS",
+    "progress": 100,
+    "icon": "devicon-tailwindcss-plain",
+    "category": "Framework"
   },
   {
     "name": "C",
@@ -78,9 +66,15 @@
     "category": "Backend"
   },
   {
-    "name": "Python",
+    "name": "Django",
     "progress": 100,
-    "icon": "devicon-python-plain",
+    "icon": "devicon-django-plain",
+    "category": "Backend"
+  },
+  {
+    "name": "FastAPI",
+    "progress": 100,
+    "icon": "devicon-fastapi-plain",
     "category": "Backend"
   },
   {
@@ -90,9 +84,57 @@
     "category": "Backend"
   },
   {
+    "name": "Go",
+    "progress": 100,
+    "icon": "devicon-go-plain",
+    "category": "Backend"
+  },
+  {
+    "name": "GraphQL",
+    "progress": 100,
+    "icon": "devicon-graphql-plain",
+    "category": "Backend"
+  },
+  {
+    "name": "Groovy",
+    "progress": 100,
+    "icon": "devicon-groovy-plain",
+    "category": "Backend"
+  },
+  {
+    "name": "Hibernate",
+    "progress": 100,
+    "icon": "devicon-hibernate-plain",
+    "category": "Backend"
+  },
+  {
+    "name": "Java",
+    "progress": 100,
+    "icon": "devicon-java-plain",
+    "category": "Backend"
+  },
+  {
     "name": "Micronaut",
     "progress": 100,
     "icon": "devicon-micronaut-plain",
+    "category": "Backend"
+  },
+  {
+    "name": "Node.js",
+    "progress": 100,
+    "icon": "devicon-nodejs-plain",
+    "category": "Backend"
+  },
+  {
+    "name": "Python",
+    "progress": 100,
+    "icon": "devicon-python-plain",
+    "category": "Backend"
+  },
+  {
+    "name": "Shell Scripting",
+    "progress": 100,
+    "icon": "devicon-c-plain",
     "category": "Backend"
   },
   {
@@ -120,10 +162,10 @@
     "category": "Backend"
   },
   {
-    "name": "Django",
+    "name": "Elasticsearch",
     "progress": 100,
-    "icon": "devicon-django-plain",
-    "category": "Backend"
+    "icon": "devicon-elasticsearch-plain",
+    "category": "Database"
   },
   {
     "name": "MongoDb",
@@ -138,10 +180,28 @@
     "category": "Database"
   },
   {
-    "name": "Shell Scripting",
+    "name": "PostgreSQL",
     "progress": 100,
-    "icon": "devicon-c-plain",
-    "category": "Backend"
+    "icon": "devicon-postgresql-plain",
+    "category": "Database"
+  },
+  {
+    "name": "Redis",
+    "progress": 100,
+    "icon": "devicon-redis-plain",
+    "category": "Database"
+  },
+  {
+    "name": "AWS",
+    "progress": 100,
+    "icon": "devicon-amazonwebservices-plain-wordmark",
+    "category": "DevOps"
+  },
+  {
+    "name": "Docker",
+    "progress": 100,
+    "icon": "devicon-docker-plain",
+    "category": "DevOps"
   },
   {
     "name": "Git",
@@ -150,9 +210,21 @@
     "category": "DevOps"
   },
   {
-    "name": "Jira",
+    "name": "GitHub Actions",
     "progress": 100,
-    "icon": "devicon-jira-plain",
+    "icon": "devicon-githubactions-plain",
+    "category": "DevOps"
+  },
+  {
+    "name": "Kubernetes",
+    "progress": 100,
+    "icon": "devicon-kubernetes-plain",
+    "category": "DevOps"
+  },
+  {
+    "name": "Apache Kafka",
+    "progress": 100,
+    "icon": "devicon-apachekafka-plain",
     "category": "Tools"
   },
   {
@@ -162,9 +234,51 @@
     "category": "Tools"
   },
   {
+    "name": "Cypress",
+    "progress": 100,
+    "icon": "devicon-cypressio-plain",
+    "category": "Tools"
+  },
+  {
+    "name": "Gradle",
+    "progress": 100,
+    "icon": "devicon-gradle-plain",
+    "category": "Tools"
+  },
+  {
     "name": "IntelliJ IDEA",
     "progress": 100,
     "icon": "devicon-intellij-plain",
+    "category": "Tools"
+  },
+  {
+    "name": "Jest",
+    "progress": 100,
+    "icon": "devicon-jest-plain",
+    "category": "Tools"
+  },
+  {
+    "name": "Jira",
+    "progress": 100,
+    "icon": "devicon-jira-plain",
+    "category": "Tools"
+  },
+  {
+    "name": "Maven",
+    "progress": 100,
+    "icon": "devicon-maven-plain",
+    "category": "Tools"
+  },
+  {
+    "name": "NPM",
+    "progress": 100,
+    "icon": "devicon-npm-plain",
+    "category": "Tools"
+  },
+  {
+    "name": "Postman",
+    "progress": 100,
+    "icon": "devicon-postman-plain",
     "category": "Tools"
   },
   {
@@ -174,27 +288,57 @@
     "category": "Tools"
   },
   {
+    "name": "Sentry",
+    "progress": 100,
+    "icon": "devicon-sentry-original",
+    "category": "Tools"
+  },
+  {
+    "name": "Vite",
+    "progress": 100,
+    "icon": "devicon-vitejs-plain",
+    "category": "Tools"
+  },
+  {
+    "name": "Yarn",
+    "progress": 100,
+    "icon": "devicon-yarn-plain",
+    "category": "Tools"
+  },
+  {
+    "name": "GitHub",
+    "progress": 100,
+    "icon": "devicon-github-original",
+    "category": "Tools"
+  },
+  {
+    "name": "Kibana",
+    "progress": 100,
+    "icon": "devicon-kibana-plain",
+    "category": "Tools"
+  },
+  {
     "name": "Android",
     "progress": 100,
     "icon": "devicon-android-plain",
     "category": "Mobile"
   },
   {
+    "name": "MacOs",
+    "progress": 100,
+    "icon": "devicon-apple-plain",
+    "category": "OS"
+  },
+  {
     "name": "Ubuntu",
     "progress": 100,
     "icon": "devicon-ubuntu-plain",
-    "category": "Operating System"
+    "category": "OS"
   },
   {
     "name": "Windows",
     "progress": 100,
     "icon": "devicon-windows8-plain",
-    "category": "Operating System"
-  },
-  {
-    "name": "MacOs",
-    "progress": 100,
-    "icon": "devicon-apple-plain",
-    "category": "Operating System"
+    "category": "OS"
   }
 ]
