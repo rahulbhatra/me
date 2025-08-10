@@ -5,8 +5,88 @@ import CrimeAnalysis from '../crime_analysis.jpg';
 import Portfolio from '../portfolio.jpg';
 import SmartPortables from '../SmartPortables.png';
 import HomeWeather from '../HomeWeather.png';
+import DragonAssist from '../assets/DragonAssist.png';
 
-const images = [null, SmartPortables, HomeWeather, SeparatingPoints, CrimeAnalysis, Portfolio];
+const DescriptionList = ({ descriptions, collapsedCount = 4 }) => {
+  const [expanded, setExpanded] = React.useState(false);
+  const containerRef = React.useRef(null);
+  const [maxHeight, setMaxHeight] = React.useState('0px');
+
+  const computeCollapsedHeight = React.useCallback(() => {
+    const el = containerRef.current;
+    if (!el) return '0px';
+    const items = el.querySelectorAll('li');
+    const count = Math.min(collapsedCount, items.length);
+    let h = 0;
+    for (let i = 0; i < count; i++) h += items[i].offsetHeight;
+    // Tailwind space-y-3 = 0.75rem = 12px
+    const gap = 12;
+    const gaps = Math.max(0, count - 1);
+    h += gap * gaps;
+    return `${h}px`;
+  }, [collapsedCount]);
+
+  const computeExpandedHeight = React.useCallback(() => {
+    const el = containerRef.current;
+    return el ? `${el.scrollHeight}px` : '0px';
+  }, []);
+
+  React.useLayoutEffect(() => {
+    const setHeights = () => setMaxHeight(expanded ? computeExpandedHeight() : computeCollapsedHeight());
+    setHeights();
+    const onResize = () => setHeights();
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, [expanded, computeCollapsedHeight, computeExpandedHeight]);
+
+  return (
+    <div className="mt-5">
+      {/* Animated height wrapper */}
+      <div
+        ref={containerRef}
+        style={{ maxHeight, transition: 'max-height 350ms ease', overflow: 'hidden' }}
+      >
+        <ul className="space-y-3">
+          {descriptions.map((d, i) => {
+            const isExtra = i >= collapsedCount;
+            return (
+              <li
+                key={`desc-${i}`}
+                className={[
+                  'flex items-start gap-3 text-[16px] leading-8 text-gray-800 transition duration-300',
+                  isExtra ? (expanded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-1') : 'opacity-100 translate-y-0',
+                ].join(' ')}
+              >
+                <span className="mt-1 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full bg-emerald-100 ring-1 ring-emerald-300">
+                  <svg viewBox="0 0 20 20" fill="currentColor" className="h-3 w-3 text-emerald-700">
+                    <path fillRule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.01 7.01a1 1 0 01-1.42 0L3.296 8.734a1 1 0 111.414-1.414l3.155 3.155 6.303-6.303a1 1 0 011.536 0z" clipRule="evenodd" />
+                  </svg>
+                </span>
+                <span className="whitespace-pre-line">{d}</span>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+
+      {descriptions.length > collapsedCount && (
+        <button
+          type="button"
+          onClick={() => setExpanded((v) => !v)}
+          className="mt-4 inline-flex items-center gap-2 rounded-lg ring-1 ring-gray-300 px-3 py-2 text-sm font-medium text-gray-900 transition hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+          aria-expanded={expanded}
+        >
+          <span className="material-icons-outlined text-base" aria-hidden>
+            {expanded ? 'expand_less' : 'expand_more'}
+          </span>
+          {expanded ? 'Show less' : 'Show more'}
+        </button>
+      )}
+    </div>
+  );
+};
+
+const images = [DragonAssist, SmartPortables, HomeWeather, SeparatingPoints, CrimeAnalysis, Portfolio];
 
 const Projects = () => {
   return (
@@ -14,7 +94,7 @@ const Projects = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 uppercase">Projects</h2>
-          <p className="mt-3 text-base md:text-lg text-gray-600">A snapshot of what I build and how I think.</p>
+          <p className="mt-3 text-base md:text-lg text-gray-600">A glimpse into what I create and the way I approach building — blending technical precision with creative problem-solving to craft solutions that are as thoughtful as they are impactful.</p>
         </div>
 
         {/* Grid */}
@@ -54,27 +134,14 @@ const ProjectCard = ({ project, image }) => {
       </div>
 
       {/* Content */}
-      <div className="relative p-5 sm:p-6">
+      <div className="relative p-6 sm:p-7">
         <h3 className="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 via-pink-500 to-cyan-600">{project.header}</h3>
-        <div className="mt-2 h-1 w-12 rounded-full bg-gradient-to-r from-emerald-400 to-pink-400" />
+        <div className="mt-3 h-1.5 w-16 rounded-full bg-gradient-to-r from-emerald-400 to-pink-400" />
         {Array.isArray(project.description) ? (
-          <div className="mt-4 rounded-xl bg-gray-50/80 ring-1 ring-gray-200 shadow-sm p-4 sm:p-5">
-            <ul className="space-y-3">
-              {project.description.map((d, i) => (
-                <li key={`${project.header}-desc-${i}`} className="flex items-start gap-3 text-[15px] leading-7 text-gray-800">
-                  <span className="mt-1 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full bg-emerald-100 ring-1 ring-emerald-300">
-                    <svg viewBox="0 0 20 20" fill="currentColor" className="h-3 w-3 text-emerald-700">
-                      <path fillRule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.01 7.01a1 1 0 01-1.42 0L3.296 8.734a1 1 0 111.414-1.414l3.155 3.155 6.303-6.303a1 1 0 011.536 0z" clipRule="evenodd" />
-                    </svg>
-                  </span>
-                  <span className="whitespace-pre-line">{d}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <DescriptionList descriptions={project.description} collapsedCount={4} />
         ) : (
-          <div className="mt-4 rounded-xl border-l-4 border-emerald-400 bg-gray-50/80 p-4 sm:p-5 ring-1 ring-gray-200 shadow-sm">
-            <p className="text-[15px] leading-7 text-gray-800 whitespace-pre-line">
+          <div className="mt-5">
+            <p className="text-[16px] leading-8 text-gray-800 whitespace-pre-line">
               {project.description}
             </p>
           </div>
@@ -93,7 +160,7 @@ const ProjectCard = ({ project, image }) => {
 
         {/* Tags (optional) */}
         {tags.length > 0 && (
-          <ul className="mt-4 flex flex-wrap gap-2">
+          <ul className="mt-5 flex flex-wrap gap-2">
             {tags.map((t) => (
               <li key={t} className="rounded-full bg-gray-100/80 px-2.5 py-1 text-xs font-medium text-gray-800 ring-1 ring-gray-200 hover:bg-gray-200">
                 {t}
@@ -104,7 +171,7 @@ const ProjectCard = ({ project, image }) => {
 
         {/* Actions */}
         {(hasGithub || hasDemo) && (
-          <div className="mt-6 border-t border-gray-100 pt-4 flex flex-wrap items-center gap-3">
+          <div className="mt-7 border-t border-gray-100 pt-5 flex flex-wrap items-center gap-3">
             {hasGithub && (
               <a
                 href={project.github_link}
@@ -122,13 +189,10 @@ const ProjectCard = ({ project, image }) => {
                 href={project.demo_link}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg ring-1 ring-gray-300 px-3 py-2 text-sm font-medium text-gray-900 transition hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+                className="inline-flex items-center gap-2 rounded-full border border-emerald-400 bg-white px-4 py-2 text-sm font-semibold text-emerald-700 shadow-sm transition hover:bg-emerald-50 hover:shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
                 aria-label={`Open live demo for ${project.header}`}
               >
-                <span className="material-icons-outlined text-base" aria-hidden>
-                  open_in_new
-                </span>
-                Live Demo
+                <span>Live Demo</span>
               </a>
             )}
           </div>
