@@ -24,7 +24,7 @@ const Skills = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 via-pink-500 to-cyan-600 uppercase">Skills</h2>
-          <p className="mt-3 text-base md:text-lg text-gray-600">A quick snapshot of the tools I use and how confident I am with each.</p>
+          <p className="mt-3 text-base md:text-lg text-gray-600">A visual overview of my core technologies, showcasing the tools I work with and my proficiency in each.</p>
         </div>
 
         {/* Skill grid */}
